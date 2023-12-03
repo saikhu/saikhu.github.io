@@ -1,9 +1,8 @@
 ---
 layout: post
-date: 2015-10-22 15:59:00-0400
+date: 2022-03-12 09:00:00+0900
 inline: true
 related_posts: false
 ---
 
-A simple inline announcement.
-ß
+Excited to start a new chapter as a Computer Vision Research Engineer with UNOMIC (Busan, Korea). Looking forward to contributing to cutting-edge innovations. #NewBeginnings #DeltaXai #ComputerVision

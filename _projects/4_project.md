@@ -1,80 +1,88 @@
 ---
 layout: page
-title: project 4
-description: another without an image
-img:
-importance: 3
+title: Docker Guide for AI Model Development and Deployment
+description: This is theoretical concepts of the Docker with hands-ons commands.
+img: assets/img/projects/p_4/project_04_docker.jpg
+importance: 1
 category: fun
+date: 2023-12-07
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+Docker Examples Guide
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+From basic concepts of Docker to start working on docker for the computer vision tasks, training, testing, evaluation and deployment.
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+Check out the GitHub repository for more details: [Docker Guide for AI Model Development and Deployment](https://github.com/saikhu/Docker-Guide-for-AI-Model-Development-and-Deployment)
+
+In this project I tried to explain from the basic concept of Docker how it is different than the VM's to practical examples of the computer vision.
+
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/projects/p_4/container_vs_vm.png" title="The difference between a container and VM" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
+    The difference between a container and VM.
 </div>
+
+
+
+1.  Theoretical concepts, and basic commands to use Docker for example.
+
+    Installation and verify the installation.
+    {% raw %}
+    ```bash
+    # Uuninstall all conflicting packages
+    for pkg in docker.io docker-doc docker-compose docker-compose-v2 podman-docker containerd runc; do sudo apt-get remove $pkg; done
+
+    # Add Docker's official GPG key:
+    sudo apt-get update
+    sudo apt-get install ca-certificates curl gnupg
+    sudo install -m 0755 -d /etc/apt/keyrings
+    curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+    sudo chmod a+r /etc/apt/keyrings/docker.gpg
+
+    # Add the repository to Apt sources:
+    echo \
+    "deb [arch="$(dpkg --print-architecture)" signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
+    "$(. /etc/os-release && echo "$VERSION_CODENAME")" stable" | \
+    sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+    sudo apt-get update
+
+    # Install the latest version,
+    sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+
+    # Verify that the Docker Engine installation
+    sudo docker run hello-world
+
+    docker --version
+    # If you get an error, please try: sudo docker --version
+    ```
+    {% endraw %}
+
+
+2.  Practical examples 
+
+    The example folder contains the Docker usages examples, the main focus is to use Docker for the AI Models Development and Deployment.
+
+    There are there three examples:
+
+    -  🔰 Simple Docker Example: How to use simple container using Dockerfile and manipulate the image (Picture)
+    -  🏹 Intermediate Example: How to run the OpenCV inference using Live camera feed and detect the face, then show the Live feed on web browser using Python Flask.
+    -  🔱 Advanced Example: Comming Soon !
+
+    
+    Check out the GitHub repository for more details: [Docker Guide for AI Model Development and Deployment](https://github.com/saikhu/Docker-Guide-for-AI-Model-Development-and-Deployment/blob/main/docker-examples/README.md)
+
+---
+
+
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/projects/p_4/output.gif" title="OpenCV inference using Live camera feed and detect the face, then show the Live feed on web browser using Python Flask" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    This image can also have a caption. It's like magic.
+    OpenCV inference using Live camera feed and detect the face, then show the Live feed on web browser using Python Flask.
 </div>
-
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, *bled* for your project, and then... you reveal its glory in the next row of images.
-
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
-
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-```html
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-```
-{% endraw %}

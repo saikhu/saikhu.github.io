@@ -1,81 +1,58 @@
 ---
 layout: page
-title: project 2
-description: a project with a background image and giscus comments
-img: assets/img/3.jpg
+title: Active Contour Model for Image Segmentation
+description: This project extends to research article publication.
+img: assets/img/projects/p_2/cover.jpg
 importance: 2
 category: work
-giscus_comments: true
+giscus_comments: false
+related_publications: asim2021active
+date: 2023-12-07
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+This work was supported by the National Research Foundation of Korea (NRF) grant funded by the Korea government Ministry of Science and Information Technology (MSIT) (No. 2019R1F1A106261213) and the Chung-Ang University Young Scientist Scholarship 2020.
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+## Abstract
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+ACMs have been shown to be highly suitable for image segmentation tasks. This paper introduces a novel active contour model with a local dilated convolution filter (ACLD), offering improved segmentation with less computational time. The ACLD model demonstrates superior performance on both synthetic and natural images, as well as on the ISIC2017 dataset for medical image segmentation.
+
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/projects/p_2/chart.png" title="Segmentation Results" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
+    The segmentation results on the ISIC2018 dataset: (a) the segmentation result of Local Image Fitting (LIF) model, (b) LSACM, (c) GLSEPF,  (d) Proposed model (ACLD), and (e) shows the Human annotated binary mask of the given images.
+The green outline shows the true condition of the original cancer area, while the red outline shows the segmentation results of the ACM models, and blue outline shows the initial contour.
 </div>
+
+## Proposed Model
+
+The ACLD model integrates local image information through a signed pressure force function and uses a Gaussian kernel applied via dilated convolution for regularizing the level set formulation. This approach automatically stops at the object boundaries, enhancing segmentation accuracy and efficiency.
+
+### Key Features
+
+- **Local Dilated Convolution Filter**: Enhances local region-based model performance.
+- **Automatic Stopping Conditions**: Precisely stops the contour at the object boundaries.
+- **Efficient Segmentation**: Offers less computational time and higher accuracy.
+
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/projects/p_2/cancer_04.png" title="Segmentation Results" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
-
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, *bled* for your project, and then... you reveal its glory in the next row of images.
-
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
+    The segmentation results on the ISIC2018 dataset: (a) the segmentation result of Local Image Fitting (LIF) model, (b) LSACM, (c) GLSEPF,  (d) Proposed model (ACLD), and (e) shows the Human annotated binary mask of the given images.
+The green outline shows the true condition of the original cancer area, while the red outline shows the segmentation results of the ACM models, and blue outline shows the initial contour.
 </div>
 
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+### Contributions
 
-{% raw %}
-```html
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-```
-{% endraw %}
+- Introduced a novel ACM for robust image segmentation.
+- Demonstrated the model's effectiveness on various datasets.
+- Provided a comprehensive comparison with state-of-the-art models.
+
+For more details on the model formulation, implementation, and results, please refer to our publication in the [IEEE Access](https://ieeexplore.ieee.org/document/9656758).
+

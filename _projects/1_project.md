@@ -6,7 +6,7 @@ img: assets/img/projects/p_1/p_1.png
 importance: 1
 category: work
 date: 2022-05-01
-related_publications: emmamuel20223dcnn, einstein1950meaning
+related_publications: emmamuel20223dcnn
 ---
 
 Developed and deployed a cloud-native, containerized application specifically designed for the accurate classification of Alzheimer's Disease. Utilized the application using a state-of-the-art 3D CNN model trained on 3D Brain Magnetic Resonance Images, delivering reliable and precise results.

@@ -3,9 +3,9 @@ layout: page
 title: Cloud Native Alzheimer's Disease Detection App
 description: Cloud Native Alzheimer's Disease Detection App
 img: assets/img/projects/p_1/p_1.png
-importance: 1
+importance: 6
 category: work
-date: 2022-05-01
+date: 2022-05-05 # Add this line to include a date
 related_publications: emmamuel20223dcnn
 ---
 

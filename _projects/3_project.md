@@ -5,7 +5,7 @@ description:
 img: assets/img/projects/p_3/cover.jpg
 importance: 2
 category: work
-giscus_comments: true
+giscus_comments: false
 date: 2023-12-07
 ---
 
@@ -17,7 +17,7 @@ With the absence of a GUI tool for applying machine learning techniques to medic
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/projects/p_3/cap.PNG" title="Segmentation Results" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/projects/p_3/cap.png" title="Segmentation Results" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
@@ -34,7 +34,7 @@ The toolkit encompasses several key functionalities:
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/projects/p_3/cap1.PNG" title="Preprocessing page" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/projects/p_3/cap1.png" title="Preprocessing page" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
@@ -43,7 +43,7 @@ The toolkit encompasses several key functionalities:
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/projects/p_3/cap2.PNG" title="Feature engineering page of the Application" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/projects/p_3/cap2.png" title="Feature engineering page of the Application" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
@@ -55,5 +55,6 @@ The toolkit encompasses several key functionalities:
 
 The Automated Classification Toolkit for Medical Imaging Researchers stands as a significant advancement for researchers in the medical imaging field, providing a robust platform for applying machine learning algorithms to medical images.
 
-Check out the presentation for more details: [Powerpoint presentation](assets/img/projects/p_3/Presentation.pptx)
 
+Check out the presentation for more details:
+<iframe src="https://docs.google.com/presentation/d/1M-ofhUlYhhQ_HYaiG1UGCCggnWq55ZD8/edit?usp=sharing&ouid=114836757344491497331&rtpof=true&sd=true" frameborder="0" width="780" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>

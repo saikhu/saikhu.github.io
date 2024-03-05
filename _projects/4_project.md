@@ -5,7 +5,7 @@ description: This is theoretical concepts of the Docker with hands-ons commands.
 img: assets/img/projects/p_4/project_04_docker.jpg
 importance: 1
 category: fun
-date: 2023-12-07
+date: 2023-12-04 # Add this line to include a date
 ---
 
 Docker Examples Guide

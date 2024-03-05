@@ -3,11 +3,11 @@ layout: page
 title: Active Contour Model for Image Segmentation
 description: This project extends to research article publication.
 img: assets/img/projects/p_2/cover.jpg
-importance: 2
+importance: 7
 category: work
 giscus_comments: false
 related_publications: asim2021active
-date: 2023-12-07
+date: 2021-08-22 # Add this line to include a date
 ---
 
 This work was supported by the National Research Foundation of Korea (NRF) grant funded by the Korea government Ministry of Science and Information Technology (MSIT) (No. 2019R1F1A106261213) and the Chung-Ang University Young Scientist Scholarship 2020.

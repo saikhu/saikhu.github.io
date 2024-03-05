@@ -1,12 +1,12 @@
 ---
 layout: page
-title: Automated Classification Toolkit for Medical Imaging Researchers
-description: 
+title: Classification Toolkit for Medical Imaging Researchers
+description: A MATLAB App (toolkit) for CV experiments.
 img: assets/img/projects/p_3/cover.jpg
-importance: 2
+importance: 8
 category: work
 giscus_comments: false
-date: 2023-12-07
+date: 2019-06-09 # Add this line to include a date
 ---
 
 This project develops a comprehensive toolbox for applying machine learning algorithms to medical imaging, facilitating advanced analysis and predictions across various medical imaging datasets.

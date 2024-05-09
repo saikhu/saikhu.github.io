@@ -12,8 +12,8 @@ profile:
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>DeltaX.ai</p>
-    <p>3rd Floor, 24, Namdaemun-ro 9-gil, Jung-gu</p>
-    <p>Seoul, Republic of Korea</p>
+    <p>5F, 590 Gyeongin-ro, Guro-gu, Seoul</p>
+    <p>Republic of Korea</p>
 
 news: true  # includes a list of news items
 latest_posts: false  # includes a list of the newest posts

@@ -15,7 +15,7 @@ footer_text: >
 keywords: #jekyll, jekyll-theme, academic-website, portfolio-website  # add your own keywords or leave empty
 
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: ⚛️  # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+icon: 🦚  # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
 url: https://saikhu.github.io # the base hostname & protocol for your site
 # baseurl: /al-folio # the subpath of your site, e.g. /blog/
@@ -131,10 +131,10 @@ bing_site_verification:  # out your bing-site-verification ID (Bing Webmaster)
 
 # # Pagination
 # pagination:
-#   enabled: false
+#   enabled: true
 
 # related_blog_posts:
-#   enabled: false
+#   enabled: true
 #   max_related: 5
 
 # Giscus comments (RECOMMENDED)
@@ -186,7 +186,7 @@ announcements:
 latest_posts:
   enabled: true
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 5 # leave blank to include all the blog posts
+  limit:  # leave blank to include all the blog posts
 
 # -----------------------------------------------------------------------------
 # Jekyll settings

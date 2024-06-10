@@ -17,7 +17,7 @@ With the absence of a GUI tool for applying machine learning techniques to medic
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/projects/p_3/cap.png" title="Segmentation Results" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/projects/p_3/cap.PNG" title="Segmentation Results" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
@@ -34,7 +34,7 @@ The toolkit encompasses several key functionalities:
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/projects/p_3/cap1.png" title="Preprocessing page" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/projects/p_3/cap1.PNG" title="Preprocessing page" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
@@ -43,7 +43,7 @@ The toolkit encompasses several key functionalities:
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/projects/p_3/cap2.png" title="Feature engineering page of the Application" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/projects/p_3/cap2.PNG" title="Feature engineering page of the Application" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">

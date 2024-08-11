@@ -11,7 +11,7 @@ profile:
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>Seoul,</p>
+    <p>16-17 Chungshin 2-gil, Jongno-gu, Seoul,  03098,</p>
     <p>Republic of Korea</p>
 
 news: true  # includes a list of news items

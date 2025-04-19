@@ -1,7 +1,7 @@
-FROM ubuntu:latest
-ENV DEBIAN_FRONTEND noninteractive
+# FROM ubuntu:latest
+FROM --platform=linux/amd64 ubuntu:22.04
 
-Label MAINTAINER Amir Pourmand
+ENV DEBIAN_FRONTEND noninteractive
 
 RUN apt-get update -y && apt-get install -y --no-install-recommends \
     locales \
@@ -9,10 +9,11 @@ RUN apt-get update -y && apt-get install -y --no-install-recommends \
     ruby-full \
     build-essential \
     zlib1g-dev \
+    libc6-dev \
     jupyter-nbconvert \
-    inotify-tools procps && \
+    inotify-tools \
+    procps && \
     apt-get clean && rm -rf /var/lib/apt/lists/* /var/cache/apt/archives/*
-
 
 RUN sed -i '/en_US.UTF-8/s/^# //g' /etc/locale.gen && \
     locale-gen

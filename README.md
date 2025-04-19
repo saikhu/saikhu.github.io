@@ -199,9 +199,31 @@ Workshop on Diffusion Models (NeurIPS: <a href="https://diffusionworkshop.github
     - [All Contributors](#all-contributors)
   - [License](#license)
 
+
+### Quick start guide 
+- To quick run this 
+  ```bash
+  docker compose build --no-cache
+  ```
+- If already have the docker image present on the machine 
+  ```bash
+  docker compose up 
+  ```
+- 🧹 Bonus: Rebuild + Run Clean:
+If you want to rebuild from scratch and start fresh:
+  ```bash
+  docker compose down --volumes
+  docker compose build --no-cache
+  docker compose up --force-recreate
+  ```
+- (Optional) Push to Docker Hub
+If you want to publish the image:
+  ```bash
+  docker push asimsaikhu/paro:latest
+  ```
 ## Getting started
 
-Want to learn more about Jekyll? Check out [this tutorial](https://www.taniarascia.com/make-a-static-website-with-jekyll/).
+Want to learn more about Jekyll? Check out [thsis tutorial](https://www.taniarascia.com/make-a-static-website-with-jekyll/).
 Why Jekyll? Read [Andrej Karpathy's blog post](https://karpathy.github.io/2014/07/01/switching-to-jekyll/)!
 
 ### Installation

@@ -7,13 +7,13 @@
       "phone": "(+82) 10-3406-1900",
       "url": "https://saikhu.github.io",
       "summary": "A results-oriented AI Research and Development Engineer with over 4 years of expertise in Computer Vision, Machine Learning, Deep Learning, and Automation/MLOps. Passionate about devising improved problem-solving methods for complex tasks and eager to embrace new technologies and tools.",
-      "location": {
-        "address": "390-14 Hapjeong-dong Mapo-gu",
-        "postalCode": "",
-        "city": "Seoul",
-        "countryCode": "KR",
-        "region": "Republic of Korea"
-      },
+      // "location": {
+      //   "address": "390-14 Hapjeong-dong Mapo-gu",
+      //   "postalCode": "",
+      //   "city": "Seoul",
+      //   "countryCode": "KR",
+      //   "region": "Republic of Korea"
+      // },
       "profiles": [
         {
           "network": "GitHub",
@@ -33,7 +33,7 @@
         "position": "Team Lead / AI Researcher - Computer Vision",
         "url": "http://deltax.ai/",
         "startDate": "Sep 22",
-        "endDate": "Pre",
+        "endDate": "Jun 25",
         "summary": "Leading a team specializing in model deployment on edge devices, AI/CNN Model optimization, and MLOps-related initiatives.",
         "highlights": [
           "Hyundai - Open Innovation Lounge project",

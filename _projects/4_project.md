@@ -1,88 +1,58 @@
 ---
 layout: page
 title: Docker Guide for AI Model Development and Deployment
-description: This is theoretical concepts of the Docker with hands-ons commands.
+description: Practical Docker examples for computer vision development, inference, and reproducible deployment.
 img: assets/img/projects/p_4/project_04_docker.jpg
-importance: 1
-category: fun
-date: 2023-12-04 # Add this line to include a date
+importance: 3
+category: engineering
+date: 2023-12-04
 ---
 
-Docker Examples Guide
+Created a practical Docker guide for AI and computer vision development workflows. The repository explains core container concepts and shows how to package Python/OpenCV inference workloads for repeatable local and server-side execution.
 
-From basic concepts of Docker to start working on docker for the computer vision tasks, training, testing, evaluation and deployment.
+Repository: [Docker Guide for AI Model Development and Deployment](https://github.com/saikhu/Docker-Guide-for-AI-Model-Development-and-Deployment)
 
-Check out the GitHub repository for more details: [Docker Guide for AI Model Development and Deployment](https://github.com/saikhu/Docker-Guide-for-AI-Model-Development-and-Deployment)
+## Scope
 
-In this project I tried to explain from the basic concept of Docker how it is different than the VM's to practical examples of the computer vision.
-
+- Docker basics for engineers moving from local scripts to reproducible environments.
+- Container vs. virtual-machine concepts.
+- OpenCV inference examples with Python and Flask.
+- Image build, run, and container-management commands.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/projects/p_4/container_vs_vm.png" title="The difference between a container and VM" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/projects/p_4/container_vs_vm.png" title="Container vs. virtual machine" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    The difference between a container and VM.
+    High-level comparison of containers and virtual machines.
 </div>
 
+## Examples
 
+- Basic container workflow using a Dockerfile.
+- Intermediate computer vision workflow: OpenCV inference on live camera input, served through a Python Flask web app.
+- Advanced deployment examples planned for model-serving and edge AI workflows.
 
-1.  Theoretical concepts, and basic commands to use Docker for example.
+{% raw %}
+```bash
+# Build an image from the current directory.
+docker build -t cv-demo .
 
-    Installation and verify the installation.
-    {% raw %}
-    ```bash
-    # Uninstall all conflicting packages
-    for pkg in docker.io docker-doc docker-compose docker-compose-v2 podman-docker containerd runc; do sudo apt-get remove $pkg; done
+# Run the container and expose a local web endpoint.
+docker run --rm -p 5000:5000 cv-demo
 
-    # Add Docker's official GPG key:
-    sudo apt-get update
-    sudo apt-get install ca-certificates curl gnupg
-    sudo install -m 0755 -d /etc/apt/keyrings
-    curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
-    sudo chmod a+r /etc/apt/keyrings/docker.gpg
-
-    # Add the repository to Apt sources:
-    echo \
-    "deb [arch="$(dpkg --print-architecture)" signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
-    "$(. /etc/os-release && echo "$VERSION_CODENAME")" stable" | \
-    sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
-    sudo apt-get update
-
-    # Install the latest version,
-    sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
-
-    # Verify that the Docker Engine installation
-    sudo docker run hello-world
-
-    docker --version
-    # If you get an error, please try: sudo docker --version
-    ```
-    {% endraw %}
-
-
-2.  Practical examples 
-
-    The example folder contains the Docker usages examples, the main focus is to use Docker for the AI Models Development and Deployment.
-
-    There are there three examples:
-
-    -  🔰 Simple Docker Example: How to use simple container using Dockerfile and manipulate the image (Picture)
-    -  🏹 Intermediate Example: How to run the OpenCV inference using Live camera feed and detect the face, then show the Live feed on web browser using Python Flask.
-    -  🔱 Advanced Example: Comming Soon !
-
-    
-    Check out the GitHub repository for more details: [Docker Guide for AI Model Development and Deployment](https://github.com/saikhu/Docker-Guide-for-AI-Model-Development-and-Deployment/blob/main/docker-examples/README.md)
-
----
-
+# Inspect local images and running containers.
+docker images
+docker ps
+```
+{% endraw %}
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/projects/p_4/output.gif" title="OpenCV inference using Live camera feed and detect the face, then show the Live feed on web browser using Python Flask" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/projects/p_4/output.gif" title="OpenCV inference demo" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    OpenCV inference using Live camera feed and detect the face, then show the Live feed on web browser using Python Flask.
+    OpenCV face-detection demo served through a browser interface.
 </div>

@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Excited to start a new chapter as a Computer Vision Research Engineer with DeltaX.ai! Looking forward to contributing to cutting-edge innovations. #NewBeginnings #DeltaXai #ComputerVision
+Joined DeltaX.ai as a Computer Vision Research Engineer, focusing on automotive AI, driver monitoring, and embedded deployment.

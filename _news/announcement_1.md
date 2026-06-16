@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Excited to start a new chapter as a Computer Vision Research Engineer with UNOMIC (Busan, Korea). Looking forward to contributing to cutting-edge innovations. #NewBeginnings #DeltaXai #ComputerVision
+Started as an AI Research Engineer at UNOMIC in Busan, working on cloud-native medical imaging and 3D brain MRI classification.

@@ -2,10 +2,10 @@
 layout: page
 title: projects
 permalink: /projects/
-description: Projects related to my work experience and just for fun.
+description: Selected computer vision, edge AI, MLOps, and medical imaging work.
 nav: true
-nav_order: 1
-display_categories: [work, fun]
+nav_order: 2
+display_categories: [work, engineering]
 horizontal: false
 ---
 

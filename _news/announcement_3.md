@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Proud to lead DeltaX's AI Deployment Team, focusing on Texas Instruments Edge Devices, enhancing AI deployment and efficiency.
+Led DeltaX's AI deployment team for edge AI work on Texas Instruments TDA4VM and related automotive vision platforms.

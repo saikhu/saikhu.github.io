@@ -7,11 +7,11 @@
   - name: Full Name
     value: Usman Asim
   - name: Title
-    value: AI / ML / CV / MLOps Engineer
+    value: Computer Vision Engineer | Edge AI, NPU Deployment & MLOps
   - name: Languages
     value: English (Fluent), Urdu (Native), Punjabi (Native), Korean (Beginner)
   - name: Location
-    value: Sando-dong, Dongjak-gu, Seoul, Republic of Korea
+    value: Seoul, Republic of Korea
   - name: Email
     value: asimsaikhu@gmail.com
   - name: Website
@@ -31,7 +31,7 @@
     - 'Supervisor: Dr. Mudassar Raza'
     - 'Final Year Project: Automated Classification Toolkit for the Medical Image Researchers (MATLAB)
       2019.'
-  - title: Masters of Computer Science and Engineering
+  - title: Master of Science in Computer Science and Engineering
     institution: Chung-Ang University, Seoul, Rep. of Korea
     year: Mar, 2020 – Feb, 2022
     description:
@@ -43,66 +43,46 @@
 - title: Experience
   type: time_table
   contents:
-  - title: AI Consultant
-    institution: Evismart / Nimybx, Vancouver, Canada
+  - title: AI Consultant (Remote)
+    institution: Evismart, Vancouver, Canada
     year: Oct 2024 - March 2026
     description:
-    - Consultation on new inhouse AI-based product development, including the design and implementation
-      of computer vision models for various applications. Provided expertise in model optimization and
-      deployment strategies for dental scans.
+    - Advised on computer vision product development for dental scan segmentation, covering model design,
+      optimization, and deployment strategy.
+    - Translated dental imaging requirements into practical model-development and production-readiness
+      guidance for the product team.
   - title: AI Research Engineer
     institution: ConTiLab, Seoul, Korea
     year: Jun 2025 - Feb 2026
     description:
-    - Worked on the iSafeGuard product that utilize the vision AI-based Tech-driven Fatality Prevention.
-      Deployed iSafeGuard AI models (YOLOv8) on the mobilint NPU (Aries) and DeepX M1 NPU, evaluated the
-      performance measures.
-  - title: Team Leader
+    - Deployed iSafeGuard YOLOv8 worker-safety models on Mobilint Aries and DeepX M1 NPUs and evaluated
+      performance across embedded targets.
+    - Built a remote AI model management and monitoring system for camera-based worker-safety devices
+      running on embedded AI NPUs.
+  - title: Team Leader & AI Deployment Engineer & AI Researcher
     institution: DELTAX, Seoul, Korea
-    year: Nov 2023 - Jun 2025
+    year: Sep 2022 - Jun 2025
     description:
-    - During my time at DeltaX, I worked extensively on deploying AI models to neural processing units
-      (NPUs) and edge AI platforms such as Texas Instruments Jacinto™ 7, HAILO-15, Renesas R-Car, and
-      Rockchip. This included customizing Yocto-based SDKs for embedded Linux systems and building optimized
-      inference pipelines for multimodel deployment on low-power devices—achieving up to a 10× improvement
-      in FPS compared to standard Python-based laptop implementations. I developed vision applications
-      using OpenVX and platform-specific libraries, particularly for fisheye IR cameras used in driver
-      and occupant monitoring systems. My responsibilities also included embedded C/C++ development and
-      sensor fusion, integrating visual data with additional in-vehicle sensor inputs. To streamline MLOps
-      workflows, I automated Docker-based CI/CD pipelines, significantly improving model deployment efficiency.
-      Additionally, I led a team of seven engineers, coordinating tasks across model optimization, deployment,
-      and integration pipelines. My work focused on developing AI models for classification, object detection,
-      facial landmarks, and segmentation using state-of-the-art techniques.
-  - title: AI Researcher
-    institution: DELTAX, Seoul, Korea
-    year: Sep 2022 - Nov 2023
-    description:
-    - 'Hyundai - Cabin and Driver Monitoring Systems — Developed advanced drowsiness detection algorithms
-      by utilizing face detection and facial landmarks. This innovation enhances the robustness of the
-      driver monitoring system, ensuring a safer cabin monitoring environment. [Guidelines: Euro NCAP
-      (EUROPEAN NEW CAR ASSESSMENT PROGRAMME)]'
-    - LG Display - Smart Roof System — Developed smart car ceiling display systems with hand-gesture control.
-      Integrated driver monitoring systems, enhancing gaze tracking and drowsiness detection algorithms
-      for automotive applications.
-    - Kia-DV (Driving Visualization) — In this project, we developed a system for the KIA EV9 vehicle,
-      utilizing four cameras (front, back, and both sides) to provide surround view and road segmentation
-      features. This included detecting potholes, curbs, tunnel heights, and speed bumps. The system was
-      developed and deployed on the TDA4VM SoM EVM as a proof of concept (PoC) for the Kia-DV client.
-    - Road Crack Detection — Developed and implemented a road crack detection system for a client, utilizing
-      YOLOv8 for detecting and labeling road cracks. The solution was successfully deployed on the HAILO-15
-      device for real-time inference.
-    - 'X-Surveillance — In this project we developed the X-Surveillance system, that detects the fighting
-      in the factory areas using the Surveillance cameras. [Cert: KSEL-SW-R-2024-001 (ISO/IEC 25023, ISO/IEC
-      25051)]'
+    - Led seven engineers across model optimization, deployment, and integration for automotive AI programs
+      delivered to Hyundai, Kia, and LG Display.
+    - Deployed multi-model inference pipelines on TI TDA4VM, Hailo-15, Renesas R-Car, and Rockchip edge
+      AI platforms, achieving up to 10x FPS improvement over Python laptop baselines.
+    - Customized Yocto-based embedded Linux SDKs and built OpenVX vision applications for fisheye IR driver
+      and occupant monitoring cameras.
+    - Developed embedded C/C++ and sensor-fusion components that combined camera data with additional
+      in-vehicle sensor inputs.
+    - Automated Docker-based CI/CD pipelines for model deployment, improving release consistency across
+      edge AI projects.
+    - Delivered computer vision models for classification, object detection, facial landmarks, segmentation,
+      drowsiness detection, gaze tracking, road perception, road crack detection, and surveillance.
   - title: AI Research Engineer
     institution: UNOMIC Inc., Busan, Korea
     year: Mar 2022 - Sep 2022
     description:
-    - 'Cloud Native Alzheimer''s Disease Detection App — Developed and deployed a cloud-native, containerized
-      application specifically designed for the accurate classification of Alzheimer’s Disease. Utilized
-      the application using a state-of-the-art 3D CNN model trained on 3D Brain Magnetic Resonance Images,
-      delivering reliable and precise results. [Guidelines: Personal Information Protection Act (PIPA);
-      Cert: Korea MFDS (KFDA) Medical Device Registration and Approval submmited]'
+    - Developed and deployed a cloud-native, containerized 3D CNN application for Alzheimer's disease
+      classification from 3D brain MRI.
+    - Supported Korea MFDS medical-device registration submission under Personal Information Protection
+      Act (PIPA) requirements.
 - title: Research Experience
   type: time_table
   contents:
@@ -110,24 +90,18 @@
     institution: AI Vision Lab, CAU, Seoul, S. Korea
     year: Mar 2020 - Feb 2022
     description:
-    - Image Segmentation — Created a novel model incorporating active contour and dilated convolution
-      techniques for the accurate segmentation of inhomogeneous images with different modalities.
-    - Brain Stroke Image Generation — Played a significant role in a research project funded by the National
-      Research Foundation (NRF) in Korea, focused on brain stroke image generation and segmentation using
-      GAN networks.
-    - Maritime Object Detection — Contributed to data labelling and modelling efforts for the Maritime
-      Dataset project, conducted by the National Information Society Agency, facilitating improved insights
-      and analysis within the maritime domain.
+    - Published a first-author IEEE Access paper on active contour and dilated convolution methods for
+      inhomogeneous image segmentation.
+    - Contributed to an NRF-funded brain stroke image generation and segmentation project using GAN networks.
+    - Supported data labeling and modeling for a National Information Society Agency maritime object detection
+      dataset.
   - title: Research Assistant (Intern)
     institution: ARFA Software Technology Park, Lahore, Pakistan
     year: Aug 2019 - Jan 2020
     description:
-    - Offline Signature Verification — Actively contributed to the collection and labelling of the “Offline
-      Signature Recognition Dataset,” ensuring its completeness and accuracy.
-    - CNN Segmentation Experiments — Trained diverse deep neural networks on custom datasets for experimental
-      purposes, enabling comprehensive performance evaluations and conducting transfer learning to facilitate
-      comparative analyses. Additionally, I developed a U-Net-based segmentation model for 2D brain MRI
-      scans, providing accurate classification of benign brain tumours.
+    - Built U-Net based 2D brain MRI segmentation experiments and ran transfer-learning comparisons across
+      CNN baselines.
+    - Collected and labeled offline signature recognition data for downstream verification experiments.
 - title: Skills
   type: nested_list
   contents:
@@ -139,30 +113,35 @@
     - C#
   - title: Frameworks
     items:
-    - OpenCV
     - PyTorch
     - TensorFlow
+    - OpenCV
     - Caffe2
   - title: Tools
     items:
     - Git
     - Docker
     - Kubernetes
-    - KubeFlow
+    - Kubeflow
     - MATLAB
     - Jira
     - Confluence
     - Yocto
+    - OpenVX
+    - CI/CD
   - title: Hardware
     items:
-    - Jetson
+    - TI TDA4VM
+    - Hailo-15
+    - Renesas V3H
+    - Renesas V4H
+    - Rockchip RK3588
+    - Mobilint Aries
+    - DeepX M1
+    - NVIDIA Jetson
+    - NVIDIA DGX
     - Raspberry Pi
     - Arduino
-    - Renesas V3H
-    - TI TDA4VM
-    - HAILO-15
-    - Rockchip RK3588
-    - NVIDIA DGX
   - title: Cloud
     items:
     - GCP
@@ -174,23 +153,23 @@
   - title: Other
     items:
     - Linux
-    - Yocto‑Project
-    - Edge Devices
-    - Hailo‑15
-    - V3H
-    - V4H
-    - TDA4VM
-    - Server
-    - DGX
+    - Embedded Linux
+    - Yocto Project
+    - Edge AI
+    - NPU Deployment
+    - Model Optimization
+    - Sensor Fusion
+    - Driver Monitoring Systems
+    - Occupant Monitoring Systems
+    - FreeSurfer
+    - BET
+    - FSL
+    - SPM12
     - Microsoft Windows
     - Microsoft Office
     - Visual Studio
     - PyCharm
     - Colab
-    - FreeSurfer
-    - BET
-    - FSL
-    - SPM12.
 - title: Honors and Awards
   type: time_table
   contents:
@@ -203,10 +182,10 @@
 - title: Certifications
   type: time_table
   contents:
-  - year: 2021
+  - year: '2021'
     items:
     - Specialization, TensorFlow Advanced Techniques — Coursera
-  - year: 2021
+  - year: '2021'
     items:
     - Specialization, Machine Learning Engineering for Production (MLOps) — Coursera
   - year: Oct 2021

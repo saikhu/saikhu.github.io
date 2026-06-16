@@ -1,43 +1,40 @@
 ---
 layout: page
 title: Cabin and Driver Monitoring Systems
-description: Gaze tracking and drowsiness detection in cabin monitoring systems.
+description: Automotive vision work for gaze tracking, drowsiness detection, and driver/occupant monitoring.
 img: assets/img/projects/p_5/1.jpg
-importance: 5
+importance: 1
 category: work
 date: 2022-12-05
 ---
 
----
+Worked on automotive cabin and driver monitoring systems where computer vision models must run reliably under embedded hardware, infrared camera, and real-time constraints.
 
-##### ⚠️ Due to confidentiality, I am unable to share more specifications, results, pictures, and code.
+Due to client confidentiality, this page summarizes the engineering scope without sharing proprietary specifications, datasets, source code, or production results.
 
----
+## Scope
 
-### Project Overview
-
-This project focuses on two critical components of automotive safety within Hyundai Mobis (Cabin and Driver Monitoring Systems):
+- Driver monitoring with face detection, facial landmarks, gaze tracking, and drowsiness detection.
+- Occupant and cabin monitoring using fisheye IR camera inputs.
+- Embedded deployment work across automotive edge AI platforms.
+- Integration work aligned with automotive safety and Euro NCAP-oriented driver-monitoring requirements.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/projects/p_5/2.jpg" title="Cabin and Driver Monitoring Systems" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/projects/p_5/2.jpg" title="Cabin and driver monitoring systems" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    Cabin and Driver Monitoring Systems
+    Cabin and driver monitoring context for automotive vision systems.
 </div>
 
-#### Cabin Monitoring System (CMS)
+## Engineering Focus
 
-Led the development of a high-profile gaze tracking system, significantly improving driver attention analysis. This advancement optimizes performance in the cabin monitoring system, resulting in heightened safety measures.
+- **Modeling:** Computer vision models for driver attention, facial landmarks, and behavior cues.
+- **Deployment:** Embedded AI inference pipelines on automotive hardware targets.
+- **Optimization:** Real-time performance work for low-power edge platforms.
+- **Integration:** Sensor-fusion and camera-system integration for in-vehicle use.
 
-#### Driver Monitoring System (DMS)
+## Outcome
 
-Developed advanced drowsiness detection algorithms by utilizing face detection and landmarks. This innovation enhances the robustness of the driver monitoring system, ensuring a safer cabin monitoring environment.
-
-### Technologies and Impact
-
-- **Gaze Tracking**: Innovative techniques to monitor driver's focus and attention dynamically.
-- **Drowsiness Detection**: Utilization of facial recognition and landmarks for early detection of driver fatigue.
-
-These systems contribute significantly to advancing automotive safety technology, showcasing Hyundai Mobis's commitment to driving innovation in driver assistance systems.
+The work contributed to automotive AI programs delivered for major Korean OEM and supplier contexts, including driver safety and cabin intelligence use cases.

@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Delighted to develop a cloud-based toolkit for Alzheimer's detection using 3D MRI and CNN with UNOMIC, advancing AI in medical tech.
+Developed a cloud-native Alzheimer's disease detection workflow using 3D MRI, hippocampus segmentation, and CNN-based classification.

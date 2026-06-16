@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Honored to have received a full-funded scholarship for my Master's in Computer Science and Engineering at Chung-Ang University. This scholarship is a testament to my commitment and passion for AI and Computer Vision research. I'm grateful for this recognition and excited to further my studies in this dynamic field. Connect with me to learn more [here](https://www.linkedin.com/in/usmanasimsaikhu/).
+Received the Chung-Ang University Young Scientist Scholarship for graduate study in Computer Science and Engineering.

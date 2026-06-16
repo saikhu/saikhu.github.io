@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Thrilled to share my publication on "3D-CNN Method for Alzheimer's Diagnosis" in the Journal of Multimedia Information System.
+Published work on 3D CNN-based Alzheimer's disease diagnosis using segmented hippocampus MRI in the Journal of Multimedia Information System.

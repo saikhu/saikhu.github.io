@@ -2,11 +2,10 @@
 layout: page
 permalink: /teaching/
 title: teaching
-description: Materials for courses you taught. Replace this text with your description.
+description: Teaching assistant experience in image processing, programming, and neural networks.
 nav: false
 nav_order: 5
+published: false
 ---
 
-For now, this page is assumed to be a static description of your courses. You can convert it to a collection similar to `_projects/` so that you can have a dedicated page for each course.
-
-Organize your courses by years, topics, or universities, however you like!
+I served as a teaching assistant at Chung-Ang University and COMSATS University for courses including introductory image processing, advanced image processing, object-oriented programming, and neural networks. Responsibilities included lab sessions, assignment preparation, grading, exam support, and student project guidance.

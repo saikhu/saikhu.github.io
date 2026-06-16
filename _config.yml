@@ -2,17 +2,18 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: blank # the website title (if blank, full name will be used instead)
+title: Usman Asim
 first_name: Usman
 middle_name: A.
 last_name: Saikhu
 email: asimsaikhu@gmail.com
-# description: > # the ">" symbol means to ignore newlines until "footer_text:"
-#   A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+description: >
+  Computer vision and edge AI engineer specializing in NPU deployment, embedded vision,
+  MLOps, automotive AI, and medical imaging.
 footer_text: >
-  Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
+  Computer vision, edge AI, embedded deployment, and medical imaging.
 #  Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-keywords: #jekyll, jekyll-theme, academic-website, portfolio-website  # add your own keywords or leave empty
+keywords: computer vision, edge AI, embedded AI, NPU deployment, MLOps, driver monitoring, medical imaging, PyTorch, OpenCV
 
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: 🦚  # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
@@ -58,9 +59,9 @@ max_width: 800px
 # Open Graph & Schema.org
 # -----------------------------------------------------------------------------
 # Display links to the page with a preview object on social media.
-serve_og_meta: false # Include Open Graph meta tags in the HTML head
-serve_schema_org: false # Include Schema.org in the HTML head
-og_image: # The site-wide (default for all links) Open Graph preview image
+serve_og_meta: true # Include Open Graph meta tags in the HTML head
+serve_schema_org: true # Include Schema.org in the HTML head
+og_image: assets/img/prof_pic.jpg # The site-wide (default for all links) Open Graph preview image
 
 # -----------------------------------------------------------------------------
 # Social integration
@@ -103,7 +104,7 @@ zotero_username: # your zotero username
 wechat_qr: # filename of your wechat qr-code saved as an image (e.g., wechat-qr.png if saved to assets/img/wechat-qr.png)
 
 contact_note: >
-  Please free to contact me via email, asimsaikhu@gmail.com .
+  Please contact me at asimsaikhu@gmail.com for engineering roles, collaborations, and technical discussions.
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
@@ -124,9 +125,9 @@ bing_site_verification:  # out your bing-site-verification ID (Bing Webmaster)
 
 
 
-# blog_name: saikhu # blog_name will be displayed in your blog page
-# blog_nav_title: blog # your blog must have a title for it to be displayed in the nav bar
-# blog_description: a simple way to understand and to remember
+# blog_name: engineering notes # blog_name will be displayed in your blog page
+# blog_nav_title: notes # your blog must have a title for it to be displayed in the nav bar
+# blog_description: Practical notes on computer vision, edge AI, and deployment.
 # permalink: /blog/:year/:title/
 
 # # Pagination
@@ -269,8 +270,8 @@ jekyll-archives:
     tag: '/blog/tag/:name/'
     category: '/blog/category/:name/'
 
-display_tags: ['formatting', 'images', 'links', 'math', 'code'] # these tags will be displayed on the front page of your blog
-display_categories: ['blockquotes'] # these categories will be displayed on the front page of your blog
+display_tags: ['computer-vision', 'edge-ai', 'mlops', 'embedded-linux', 'medical-imaging']
+display_categories: ['engineering', 'research']
 
 # -----------------------------------------------------------------------------
 # Jekyll Scholar
@@ -372,7 +373,7 @@ enable_math:                true   # enables math typesetting (uses MathJax)
 enable_tooltips:            false  # enables automatic tooltip links generated
                                    # for each section titles on pages and posts
 enable_darkmode:            true   # enables switching between light/dark modes
-enable_navbar_social:       false  # enables displaying social links in the
+enable_navbar_social:       true   # enables displaying social links in the
                                    # navbar on the about page
 enable_project_categories:  true   # enables categorization of projects into
                                    # multiple categories
@@ -406,19 +407,5 @@ medium_zoom:
 # Get external JSON data
 # -----------------------------------------------------------------------------
 
-jekyll_get_json:
-  - data: resume
-    json: assets/json/resume.json # it can also be an url
-jsonresume:
-  - basics
-  - work
-  - education
-  - publications
-  - projects
-  - volunteer
-  - awards
-  - certificates
-  - skills
-  - languages
-  - interests
-  - references
+jekyll_get_json: []
+jsonresume: []

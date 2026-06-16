@@ -1,58 +1,48 @@
 ---
 layout: page
 title: Active Contour Model for Image Segmentation
-description: This project extends to research article publication.
+description: IEEE Access research on robust segmentation using active contours and dilated convolution.
 img: assets/img/projects/p_2/cover.jpg
-importance: 7
+importance: 4
 category: work
 giscus_comments: false
 related_publications: asim2021active
-date: 2021-08-22 # Add this line to include a date
+date: 2021-08-22
 ---
 
-This work was supported by the National Research Foundation of Korea (NRF) grant funded by the Korea government Ministry of Science and Information Technology (MSIT) (No. 2019R1F1A106261213) and the Chung-Ang University Young Scientist Scholarship 2020.
+Developed a segmentation method that combines active contour modeling with a local dilated convolution filter. The work targets inhomogeneous images where boundaries are difficult to separate with standard region-based segmentation methods.
 
-## Abstract
+This research was supported by the National Research Foundation of Korea and the Chung-Ang University Young Scientist Scholarship.
 
-ACMs have been shown to be highly suitable for image segmentation tasks. This paper introduces a novel active contour model with a local dilated convolution filter (ACLD), offering improved segmentation with less computational time. The ACLD model demonstrates superior performance on both synthetic and natural images, as well as on the ISIC2017 dataset for medical image segmentation.
+## Contribution
 
+- Proposed the Active Contour Model with Local Dilated Convolution Filter (ACLD).
+- Improved boundary stopping behavior through local image information and a signed pressure force formulation.
+- Evaluated the method on synthetic, natural, and medical image segmentation datasets.
+- Published the work in IEEE Access.
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/projects/p_2/chart.png" title="Segmentation Results" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    The segmentation results on the ISIC2018 dataset: (a) the segmentation result of Local Image Fitting (LIF) model, (b) LSACM, (c) GLSEPF,  (d) Proposed model (ACLD), and (e) shows the Human annotated binary mask of the given images.
-The green outline shows the true condition of the original cancer area, while the red outline shows the segmentation results of the ACM models, and blue outline shows the initial contour.
-</div>
+## Technical Scope
 
-## Proposed Model
-
-The ACLD model integrates local image information through a signed pressure force function and uses a Gaussian kernel applied via dilated convolution for regularizing the level set formulation. This approach automatically stops at the object boundaries, enhancing segmentation accuracy and efficiency.
-
-### Key Features
-
-- **Local Dilated Convolution Filter**: Enhances local region-based model performance.
-- **Automatic Stopping Conditions**: Precisely stops the contour at the object boundaries.
-- **Efficient Segmentation**: Offers less computational time and higher accuracy.
+- **Methods:** Active contour models, level-set formulation, dilated convolution, region-based segmentation.
+- **Domain:** Medical and natural image segmentation.
+- **Evaluation:** Qualitative and quantitative comparison against established active contour baselines.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/projects/p_2/cancer_04.png" title="Segmentation Results" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/projects/p_2/chart.png" title="Segmentation comparison" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    The segmentation results on the ISIC2018 dataset: (a) the segmentation result of Local Image Fitting (LIF) model, (b) LSACM, (c) GLSEPF,  (d) Proposed model (ACLD), and (e) shows the Human annotated binary mask of the given images.
-The green outline shows the true condition of the original cancer area, while the red outline shows the segmentation results of the ACM models, and blue outline shows the initial contour.
+    Segmentation comparison across active contour methods. The green outline marks the reference region, red marks model output, and blue marks the initial contour.
 </div>
 
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/projects/p_2/cancer_04.png" title="Medical image segmentation result" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    Example segmentation result on a medical image sample.
+</div>
 
-### Contributions
-
-- Introduced a novel ACM for robust image segmentation.
-- Demonstrated the model's effectiveness on various datasets.
-- Provided a comprehensive comparison with state-of-the-art models.
-
-For more details on the model formulation, implementation, and results, please refer to our publication in the [IEEE Access](https://ieeexplore.ieee.org/document/9656758).
-
+For details, see the IEEE Access paper: [Active Contour Model for Image Segmentation with Dilated Convolution Filter](https://ieeexplore.ieee.org/document/9656758).

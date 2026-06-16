@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Usman Asim Saikhu — Computer Vision & Edge-AI Engineer</title>
+  <meta name="description" content="Usman Asim Saikhu — computer vision & edge-AI engineer in Seoul, building deep-learning systems for automotive driver monitoring, NPU deployment, and medical imaging." />
+  <meta name="author" content="Usman Asim Saikhu" />
+  <link rel="canonical" href="https://saikhu.github.io/" />
+
+  <!-- Open Graph / social -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Usman Asim Saikhu — Computer Vision & Edge-AI Engineer" />
+  <meta property="og:description" content="Computer vision & edge-AI engineer building deep-learning systems where hardware, latency, and reliability matter — from driver monitoring to medical imaging." />
+  <meta property="og:url" content="https://saikhu.github.io/" />
+  <meta property="og:image" content="https://saikhu.github.io/assets/prof_square.jpg" />
+  <meta name="twitter:card" content="summary" />
+
+  <!-- Favicon: peacock emoji -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦚</text></svg>" />
+
+  <!-- Apply persisted theme before first paint to avoid flash -->
+  <script>
+    (function () {
+      try {
+        if (localStorage.getItem('uas-theme') === 'dark') {
+          document.documentElement.classList.add('theme-dark');
+        }
+      } catch (e) {}
+    })();
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- ============================== NAV ============================== -->
+  <header class="nav surf">
+    <div class="nav-inner wrap">
+      <a class="brand" href="#about">
+        <span class="brand-name">Usman Asim</span>
+        <span class="brand-tag">CV · EDGE AI</span>
+      </a>
+      <nav class="nav-right">
+        <a class="nav-link" href="#work" data-nav="work">Work</a>
+        <a class="nav-link" href="#experience" data-nav="experience">Experience</a>
+        <a class="nav-link" href="#publications" data-nav="publications">Publications</a>
+        <button class="theme-toggle surf" type="button" aria-label="Toggle dark mode">
+          <span class="theme-glyph">☾</span>
+        </button>
+        <a class="contact-pill surf" href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============================== HERO / ABOUT ============================== -->
+    <section id="about" class="hero">
+      <div class="wrap">
+        <div class="hero-grid">
+          <div class="hero-text">
+            <div class="status-badge surf" data-reveal>
+              <span class="status-dot"></span>
+              <span>Open to engineering roles</span>
+            </div>
+
+            <h1 class="h1" data-reveal data-reveal-delay="60">Usman Asim<br />Saikhu</h1>
+
+            <p class="tagline" data-reveal data-reveal-delay="120">
+              Computer vision &amp; edge-AI engineer building deep-learning systems where
+              <strong>hardware, latency, and reliability</strong> actually matter — from driver
+              monitoring to medical imaging.
+            </p>
+
+            <div class="meta-row" data-reveal data-reveal-delay="180">
+              <span class="meta-loc"><span class="meta-dot"></span>Seoul, Republic of Korea</span>
+              <a class="meta-email" href="mailto:asimsaikhu@gmail.com">asimsaikhu@gmail.com</a>
+            </div>
+
+            <div class="cta-row" data-reveal data-reveal-delay="220">
+              <a class="btn btn-primary" href="mailto:asimsaikhu@gmail.com">
+                Get in touch <span class="mono-arrow">→</span>
+              </a>
+              <a class="btn btn-secondary surf" href="https://linkedin.com/in/usmanasimsaikhu" target="_blank" rel="noopener">LinkedIn</a>
+              <a class="btn btn-secondary surf" href="https://github.com/saikhu" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </div>
+
+          <div class="hero-photo" data-reveal>
+            <div class="photo-wrap">
+              <span class="photo-frame" aria-hidden="true"></span>
+              <img class="photo surf" src="assets/prof_square.jpg" alt="Usman Asim Saikhu" width="210" height="210" />
+            </div>
+          </div>
+        </div>
+
+        <!-- ============================== STATS STRIP ============================== -->
+        <div class="stats" data-reveal>
+          <div class="stat">
+            <div class="stat-val">4+</div>
+            <div class="stat-label">Years in CV / edge AI</div>
+          </div>
+          <div class="stat">
+            <div class="stat-val">7</div>
+            <div class="stat-label">Engineers led</div>
+          </div>
+          <div class="stat">
+            <div class="stat-val">10×</div>
+            <div class="stat-label">Faster inference</div>
+          </div>
+          <div class="stat">
+            <div class="stat-val">6+</div>
+            <div class="stat-label">NPU platforms</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== 01 WHAT I DO ============================== -->
+    <section id="focus">
+      <div class="wrap">
+        <div class="sec-head" data-reveal>
+          <span class="sec-num">01</span>
+          <h2 class="sec-title">What I do</h2>
+        </div>
+
+        <div class="focus-grid" data-reveal>
+          <article class="focus-card surf">
+            <span class="card-tag">EDGE DEPLOYMENT</span>
+            <h3>Edge-AI on NPUs</h3>
+            <p>Quantization, packaging, and optimized inference on automotive and industrial NPUs — TDA4VM, Hailo-15, R-Car, Rockchip, Mobilint Aries, DeepX M1, and more.</p>
+          </article>
+          <article class="focus-card surf">
+            <span class="card-tag">AUTOMOTIVE</span>
+            <h3>Driver &amp; occupant monitoring</h3>
+            <p>Face detection, landmarks, gaze, and drowsiness on embedded IR camera systems, aligned to Euro NCAP-oriented DMS requirements.</p>
+          </article>
+          <article class="focus-card surf">
+            <span class="card-tag">MLOPS</span>
+            <h3>Reproducible delivery</h3>
+            <p>Docker-based CI/CD for model release consistency, Yocto SDK customization, and reproducible embedded deployment pipelines.</p>
+          </article>
+          <article class="focus-card surf">
+            <span class="card-tag">RESEARCH</span>
+            <h3>Medical imaging</h3>
+            <p>Segmentation and classification research, including 3D-CNN diagnosis on brain MRI and active-contour methods. Six peer-reviewed papers.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== 02 SELECTED WORK ============================== -->
+    <section id="work">
+      <div class="wrap">
+        <div class="sec-head" data-reveal>
+          <span class="sec-num">02</span>
+          <h2 class="sec-title">Selected work</h2>
+        </div>
+
+        <div class="work">
+          <div class="proj-row" data-reveal>
+            <div class="proj">
+              <div class="proj-num">01</div>
+              <div class="proj-main">
+                <div class="proj-meta">Automotive · DELTAX</div>
+                <h3 class="proj-title">Cabin &amp; driver monitoring systems</h3>
+                <p class="proj-body">Driver and occupant monitoring with face detection, facial landmarks, gaze tracking, and drowsiness detection — built to run reliably on embedded IR camera systems under real-time, low-power constraints. Delivered into Korean OEM and supplier programs.</p>
+                <div class="proj-tags">
+                  <span class="tag surf">Driver Monitoring</span>
+                  <span class="tag surf">Embedded</span>
+                  <span class="tag surf">IR Vision</span>
+                  <span class="tag surf">Euro NCAP</span>
+                </div>
+              </div>
+              <div class="proj-action">
+                <span class="proj-conf">● Confidential</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="proj-row" data-reveal>
+            <div class="proj">
+              <div class="proj-num">02</div>
+              <div class="proj-main">
+                <div class="proj-meta">Automotive · DELTAX (Kia EV9)</div>
+                <h3 class="proj-title">Surround-view &amp; road perception</h3>
+                <p class="proj-body">A four-camera surround-view and road-segmentation system for the Kia EV9 — detecting potholes, curbs, tunnel-height limits, and speed bumps — developed and deployed on the TI TDA4VM SoM EVM as a client proof of concept.</p>
+                <div class="proj-tags">
+                  <span class="tag surf">Surround View</span>
+                  <span class="tag surf">Road Segmentation</span>
+                  <span class="tag surf">TDA4VM</span>
+                  <span class="tag surf">Sensor Fusion</span>
+                </div>
+              </div>
+              <div class="proj-action">
+                <span class="proj-conf">● Confidential</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="proj-row" data-reveal>
+            <div class="proj">
+              <div class="proj-num">03</div>
+              <div class="proj-main">
+                <div class="proj-meta">Industrial · ConTiLab</div>
+                <h3 class="proj-title">iSafeGuard worker-safety on NPUs</h3>
+                <p class="proj-body">YOLOv8 worker-safety detection deployed and benchmarked across Mobilint Aries and DeepX M1 NPUs, plus a remote model-management and monitoring system for camera-based safety devices running on embedded AI hardware.</p>
+                <div class="proj-tags">
+                  <span class="tag surf">YOLOv8</span>
+                  <span class="tag surf">Mobilint Aries</span>
+                  <span class="tag surf">DeepX M1</span>
+                  <span class="tag surf">Edge MLOps</span>
+                </div>
+              </div>
+              <div class="proj-action"></div>
+            </div>
+          </div>
+
+          <div class="proj-row" data-reveal>
+            <div class="proj">
+              <div class="proj-num">04</div>
+              <div class="proj-main">
+                <div class="proj-meta">Medical Imaging · UNOMIC</div>
+                <h3 class="proj-title">Cloud-native Alzheimer's detection</h3>
+                <p class="proj-body">A cloud-native 3D brain-MRI classifier: format conversion, hippocampus segmentation, and a 3D-CNN in a containerized inference workflow. Supported a Korea MFDS medical-device registration submission under PIPA requirements.</p>
+                <div class="proj-tags">
+                  <span class="tag surf">3D CNN</span>
+                  <span class="tag surf">Brain MRI</span>
+                  <span class="tag surf">Containerized</span>
+                  <span class="tag surf">MFDS</span>
+                </div>
+              </div>
+              <div class="proj-action"></div>
+            </div>
+          </div>
+
+          <div class="proj-row" data-reveal>
+            <div class="proj">
+              <div class="proj-num">05</div>
+              <div class="proj-main">
+                <div class="proj-meta">Research · IEEE Access</div>
+                <h3 class="proj-title">Active contour segmentation (ACLD)</h3>
+                <p class="proj-body">An Active Contour Model with a Local Dilated Convolution Filter for segmenting inhomogeneous images where boundaries resist standard region-based methods. First-author paper published in IEEE Access.</p>
+                <div class="proj-tags">
+                  <span class="tag surf">Segmentation</span>
+                  <span class="tag surf">Level-Set</span>
+                  <span class="tag surf">Dilated Conv</span>
+                </div>
+              </div>
+              <div class="proj-action">
+                <a class="proj-arrow" href="https://doi.org/10.1109/ACCESS.2021.3137052" target="_blank" rel="noopener"><span>IEEE</span> ↗</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="proj-row" data-reveal>
+            <div class="proj">
+              <div class="proj-num">06</div>
+              <div class="proj-main">
+                <div class="proj-meta">Engineering · Open Source</div>
+                <h3 class="proj-title">Docker guide for AI deployment</h3>
+                <p class="proj-body">A practical Docker guide for CV/AI workflows — container concepts plus packaging Python/OpenCV inference (incl. a live Flask face-detection demo) for reproducible local and server-side execution.</p>
+                <div class="proj-tags">
+                  <span class="tag surf">Docker</span>
+                  <span class="tag surf">OpenCV</span>
+                  <span class="tag surf">MLOps</span>
+                </div>
+              </div>
+              <div class="proj-action">
+                <a class="proj-arrow" href="https://github.com/saikhu/Docker-Guide-for-AI-Model-Development-and-Deployment" target="_blank" rel="noopener"><span>GitHub</span> ↗</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="proj-close"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== 03 EXPERIENCE ============================== -->
+    <section id="experience">
+      <div class="wrap">
+        <div class="sec-head" data-reveal>
+          <span class="sec-num">03</span>
+          <h2 class="sec-title">Experience</h2>
+        </div>
+
+        <div class="exp">
+          <div class="exp-entry" data-reveal>
+            <div class="exp-meta">
+              <div class="exp-date">Oct 2024 — Mar 2026</div>
+              <div class="exp-loc">Vancouver, CA · Remote</div>
+            </div>
+            <div class="exp-main">
+              <h3 class="exp-role">AI Consultant <span class="exp-pt">part-time</span></h3>
+              <div class="exp-org">Evismart · AI Product Consulting</div>
+              <p class="exp-body">Advised on a dental-scan segmentation product end to end — computer-vision model design, optimization, and deployment strategy — translating clinical imaging requirements into practical model-development and production-readiness guidance for the product team.</p>
+            </div>
+          </div>
+
+          <div class="exp-entry" data-reveal>
+            <div class="exp-meta">
+              <div class="exp-date">Jun 2025 — Feb 2026</div>
+              <div class="exp-loc">Seoul, KR</div>
+            </div>
+            <div class="exp-main">
+              <h3 class="exp-role">AI Research Engineer</h3>
+              <div class="exp-org">ConTiLab · Industrial Safety AI</div>
+              <p class="exp-body">Deployed iSafeGuard YOLOv8 worker-safety models on <strong>Mobilint Aries</strong> and <strong>DeepX M1</strong> NPUs and benchmarked performance across embedded targets. Built a remote AI model-management and monitoring system for camera-based safety devices running on embedded NPUs.</p>
+            </div>
+          </div>
+
+          <div class="exp-entry" data-reveal>
+            <div class="exp-meta">
+              <div class="exp-date">Sep 2022 — Jun 2025</div>
+              <div class="exp-loc">Seoul, KR</div>
+            </div>
+            <div class="exp-main">
+              <h3 class="exp-role">Team Lead · Computer Vision &amp; Edge-AI Engineer</h3>
+              <div class="exp-org">DELTAX · Automotive AI</div>
+              <p class="exp-body">Led <strong>seven engineers</strong> across model optimization, deployment, and integration for automotive AI programs delivered to <strong>Hyundai, Kia, and LG Display</strong>. Built embedded C/C++ and OpenVX vision applications, customized Yocto-based SDKs, integrated in-vehicle sensor-fusion inputs, and automated Docker-based CI/CD — delivering inference pipelines up to <strong>10× faster</strong> than Python laptop baselines. Shipped models spanning driver &amp; occupant monitoring, surround-view road perception, road-crack detection, in-cabin gesture UI, and factory surveillance.</p>
+              <div class="targets surf">
+                <div class="targets-label">DEPLOYMENT TARGETS</div>
+                <div class="chips">
+                  <span class="chip">TI TDA4VM</span>
+                  <span class="chip">Hailo-15</span>
+                  <span class="chip">Renesas R-Car</span>
+                  <span class="chip">Rockchip</span>
+                  <span class="chip">Mobilint Aries</span>
+                  <span class="chip">DeepX M1</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="exp-entry" data-reveal>
+            <div class="exp-meta">
+              <div class="exp-date">Mar 2022 — Sep 2022</div>
+              <div class="exp-loc">Busan, KR</div>
+            </div>
+            <div class="exp-main">
+              <h3 class="exp-role">AI Research Engineer</h3>
+              <div class="exp-org">UNOMIC Inc. · Medical AI</div>
+              <p class="exp-body">Developed and deployed a cloud-native, containerized 3D-CNN application for Alzheimer's-disease classification from 3D brain MRI, and supported a Korea MFDS medical-device registration submission under Personal Information Protection Act (PIPA) requirements.</p>
+            </div>
+          </div>
+
+          <div class="exp-entry" data-reveal>
+            <div class="exp-meta">
+              <div class="exp-date">Mar 2020 — Feb 2022</div>
+              <div class="exp-loc">Seoul, KR</div>
+            </div>
+            <div class="exp-main">
+              <h3 class="exp-role">Researcher</h3>
+              <div class="exp-org">AI Vision Lab · Chung-Ang University · Research</div>
+              <p class="exp-body">First-author IEEE Access work on active-contour and dilated-convolution methods for inhomogeneous image segmentation. Contributed to an NRF-funded brain-stroke image-generation and segmentation project using GANs, and to a National Information Society Agency maritime object-detection dataset.</p>
+            </div>
+          </div>
+
+          <div class="exp-entry" data-reveal>
+            <div class="exp-meta">
+              <div class="exp-date">Aug 2019 — Jan 2020</div>
+              <div class="exp-loc">Lahore, PK</div>
+            </div>
+            <div class="exp-main">
+              <h3 class="exp-role">Research Assistant <span class="exp-pt">intern</span></h3>
+              <div class="exp-org">ARFA Software Technology Park · Research</div>
+              <p class="exp-body">Built U-Net-based 2D brain-MRI segmentation experiments and ran transfer-learning comparisons across CNN baselines; collected and labeled an offline-signature recognition dataset for downstream verification.</p>
+            </div>
+          </div>
+
+          <div class="exp-close"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== 04 EDUCATION ============================== -->
+    <section id="education">
+      <div class="wrap">
+        <div class="sec-head" data-reveal>
+          <span class="sec-num">04</span>
+          <h2 class="sec-title">Education</h2>
+        </div>
+
+        <div class="exp">
+          <div class="exp-entry" data-reveal>
+            <div class="exp-meta">
+              <div class="exp-date">Mar 2020 — Feb 2022</div>
+              <div class="exp-loc">Seoul, KR · GPA 3.45 / 4.5</div>
+            </div>
+            <div class="exp-main">
+              <h3 class="exp-role">M.S. Computer Science &amp; Engineering</h3>
+              <div class="exp-org">Chung-Ang University</div>
+              <p class="exp-body">Thesis: <em>Active Contour Model for Image Segmentation with Dilated Convolution Filter.</em> Research in image segmentation and medical imaging, including 3D-CNN diagnosis on brain MRI. Teaching assistant for Advanced Image Processing. Six peer-reviewed papers across IEEE Access, Springer, and international conferences.</p>
+            </div>
+          </div>
+
+          <div class="exp-entry" data-reveal>
+            <div class="exp-meta">
+              <div class="exp-date">Sep 2015 — Aug 2019</div>
+              <div class="exp-loc">Punjab, PK · GPA 3.14 / 4.0</div>
+            </div>
+            <div class="exp-main">
+              <h3 class="exp-role">B.S. Computer Science</h3>
+              <div class="exp-org">COMSATS University Islamabad</div>
+              <p class="exp-body">Final-year project: an automated medical-imaging classification toolkit in MATLAB (dataset loading, preprocessing, handcrafted &amp; deep feature extraction, classifier comparison). Teaching assistant for Object-Oriented Programming, Digital Image Processing, and Neural Networks.</p>
+            </div>
+          </div>
+
+          <div class="exp-close"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== 05 TOOLKIT ============================== -->
+    <section id="toolkit">
+      <div class="wrap">
+        <div class="sec-head" data-reveal>
+          <span class="sec-num">05</span>
+          <h2 class="sec-title">Toolkit</h2>
+        </div>
+
+        <div class="toolkit" data-reveal>
+          <div class="tk-col">
+            <div class="tk-label"><span class="tk-dot"></span>Languages</div>
+            <div class="tk-chips">
+              <span class="chip surf">Python</span>
+              <span class="chip surf">C / C++</span>
+              <span class="chip surf">C#</span>
+              <span class="chip surf">Julia</span>
+              <span class="chip surf">MATLAB</span>
+            </div>
+          </div>
+          <div class="tk-col">
+            <div class="tk-label"><span class="tk-dot"></span>Vision &amp; ML</div>
+            <div class="tk-chips">
+              <span class="chip surf">PyTorch</span>
+              <span class="chip surf">TensorFlow</span>
+              <span class="chip surf">OpenCV</span>
+              <span class="chip surf">ONNX</span>
+              <span class="chip surf">Caffe2</span>
+              <span class="chip surf">3D CNNs</span>
+            </div>
+          </div>
+          <div class="tk-col">
+            <div class="tk-label"><span class="tk-dot"></span>Edge &amp; Embedded</div>
+            <div class="tk-chips">
+              <span class="chip surf">Embedded Linux</span>
+              <span class="chip surf">Yocto</span>
+              <span class="chip surf">OpenVX</span>
+              <span class="chip surf">NPU SDKs</span>
+              <span class="chip surf">Model Optimization</span>
+              <span class="chip surf">Sensor Fusion</span>
+            </div>
+          </div>
+          <div class="tk-col">
+            <div class="tk-label"><span class="tk-dot"></span>NPUs &amp; Hardware</div>
+            <div class="tk-chips">
+              <span class="chip surf">TI TDA4VM</span>
+              <span class="chip surf">Hailo-15</span>
+              <span class="chip surf">Renesas V3H / V4H</span>
+              <span class="chip surf">Rockchip RK3588</span>
+              <span class="chip surf">Mobilint Aries</span>
+              <span class="chip surf">DeepX M1</span>
+              <span class="chip surf">NVIDIA Jetson / DGX</span>
+            </div>
+          </div>
+          <div class="tk-col">
+            <div class="tk-label"><span class="tk-dot"></span>MLOps &amp; Tooling</div>
+            <div class="tk-chips">
+              <span class="chip surf">Docker</span>
+              <span class="chip surf">Kubernetes</span>
+              <span class="chip surf">Kubeflow</span>
+              <span class="chip surf">CI/CD</span>
+              <span class="chip surf">Git</span>
+              <span class="chip surf">Jira / Confluence</span>
+            </div>
+          </div>
+          <div class="tk-col">
+            <div class="tk-label"><span class="tk-dot"></span>Cloud &amp; Data</div>
+            <div class="tk-chips">
+              <span class="chip surf">GCP</span>
+              <span class="chip surf">Azure</span>
+              <span class="chip surf">MySQL / SQL</span>
+              <span class="chip surf">FreeSurfer / FSL / SPM12</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== 06 PUBLICATIONS ============================== -->
+    <section id="publications">
+      <div class="wrap">
+        <div class="sec-head" data-reveal>
+          <span class="sec-num">06</span>
+          <h2 class="sec-title">Publications</h2>
+        </div>
+
+        <div class="pubs">
+          <div class="pub-group" data-reveal>
+            <div class="pub-year">2023</div>
+            <div class="pub-items">
+              <article class="pub">
+                <div class="pub-badges">
+                  <span class="pub-badge">Springer · PAA</span>
+                  <span class="pub-selected">★ Selected</span>
+                </div>
+                <h3 class="pub-title">ViT-PGC: Vision Transformer for Pedestrian Gender Classification on Small-Size Dataset</h3>
+                <p class="pub-authors">Abbas, F.; Yasmin, M.; Fayyaz, M.; <span class="pub-me">Asim, U.</span></p>
+              </article>
+            </div>
+          </div>
+
+          <div class="pub-group" data-reveal>
+            <div class="pub-year">2022</div>
+            <div class="pub-items">
+              <article class="pub">
+                <div class="pub-badges">
+                  <span class="pub-badge">JMIS</span>
+                </div>
+                <h3 class="pub-title">3D-CNN Method over Shifted Patch Tokenization for MRI-Based Diagnosis of Alzheimer's Disease Using Segmented Hippocampus</h3>
+                <p class="pub-authors">Emmamuel, A.; <span class="pub-me">Asim, U.</span>; Yu, H.; Kim, S.</p>
+              </article>
+              <article class="pub">
+                <div class="pub-badges">
+                  <span class="pub-badge">IEEE · ARACE</span>
+                </div>
+                <h3 class="pub-title">Image Generation Network Model Based on Principal Component Analysis</h3>
+                <p class="pub-authors">Cha, G. S.; <span class="pub-me">Asim, U.</span>; Song, M. K.; Niaz, A.; Choi, K. N.</p>
+              </article>
+            </div>
+          </div>
+
+          <div class="pub-group" data-reveal>
+            <div class="pub-year">2021</div>
+            <div class="pub-items">
+              <article class="pub">
+                <div class="pub-badges">
+                  <span class="pub-badge">IEEE Access</span>
+                  <span class="pub-selected">★ Selected</span>
+                </div>
+                <h3 class="pub-title">Active Contour Model for Image Segmentation with Dilated Convolution Filter</h3>
+                <p class="pub-authors"><span class="pub-me">Asim, U.</span>; Iqbal, E.; Joshi, A.; Akram, F.; Choi, K. N.</p>
+                <a class="pub-link" href="https://doi.org/10.1109/ACCESS.2021.3137052" target="_blank" rel="noopener"><span>DOI</span> ↗</a>
+              </article>
+              <article class="pub">
+                <div class="pub-badges">
+                  <span class="pub-badge">IEEE · ISPACS</span>
+                </div>
+                <h3 class="pub-title">Saliency-Based Active Contour Model for Image Segmentation and Region Detection</h3>
+                <p class="pub-authors">Joshi, A.; Khan, M. S.; <span class="pub-me">Asim, U.</span>; Munir, A.; Song, H. C.; Choi, K. N.</p>
+              </article>
+            </div>
+          </div>
+
+          <div class="pub-group" data-reveal>
+            <div class="pub-year">2020</div>
+            <div class="pub-items">
+              <article class="pub">
+                <div class="pub-badges">
+                  <span class="pub-badge">IEEE Access</span>
+                </div>
+                <h3 class="pub-title">Saliency-Driven Active Contour Model for Image Segmentation</h3>
+                <p class="pub-authors">Iqbal, E.; Niaz, A.; Memon, A. A.; <span class="pub-me">Asim, U.</span>; Choi, K. N.</p>
+                <a class="pub-link" href="https://doi.org/10.1109/ACCESS.2020.3038945" target="_blank" rel="noopener"><span>DOI</span> ↗</a>
+              </article>
+            </div>
+          </div>
+
+          <div class="pub-close"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== 07 RECOGNITION ============================== -->
+    <section id="recognition">
+      <div class="wrap">
+        <div class="sec-head" data-reveal>
+          <span class="sec-num">07</span>
+          <h2 class="sec-title">Certifications, awards &amp; languages</h2>
+        </div>
+
+        <div class="recognition" data-reveal>
+          <div class="rec-col">
+            <div class="rec-label"><span class="tk-dot"></span>Certifications</div>
+            <div class="rec-item">
+              <div class="rec-item-title">TensorFlow: Advanced Techniques</div>
+              <div class="rec-item-meta">Coursera · 2021</div>
+            </div>
+            <div class="rec-item">
+              <div class="rec-item-title">ML Engineering for Production (MLOps)</div>
+              <div class="rec-item-meta">Coursera · 2021</div>
+            </div>
+            <div class="rec-item">
+              <div class="rec-item-title">Convolutional Neural Networks</div>
+              <div class="rec-item-meta">Coursera · 2021</div>
+            </div>
+            <div class="rec-item">
+              <div class="rec-item-title">IELTS — Band 7</div>
+              <div class="rec-item-meta">2023</div>
+            </div>
+          </div>
+
+          <div class="rec-col">
+            <div class="rec-label"><span class="tk-dot"></span>Awards &amp; honors</div>
+            <div class="rec-item">
+              <div class="rec-item-title">CAU Young Scientist Scholarship (CAYSS)</div>
+              <div class="rec-item-meta">Chung-Ang University · 2021</div>
+            </div>
+            <div class="rec-item">
+              <div class="rec-item-title">Winner — Speed Programming</div>
+              <div class="rec-item-meta">Air University, Islamabad · 2022</div>
+            </div>
+          </div>
+
+          <div class="rec-col">
+            <div class="rec-label"><span class="tk-dot"></span>Languages</div>
+            <div class="rec-item">
+              <div class="rec-item-title">English</div>
+              <div class="rec-item-meta">Fluent</div>
+            </div>
+            <div class="rec-item">
+              <div class="rec-item-title">Urdu</div>
+              <div class="rec-item-meta">Native</div>
+            </div>
+            <div class="rec-item">
+              <div class="rec-item-title">Punjabi</div>
+              <div class="rec-item-meta">Native</div>
+            </div>
+            <div class="rec-item">
+              <div class="rec-item-title">Korean</div>
+              <div class="rec-item-meta">Beginner</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== 08 GET IN TOUCH ============================== -->
+    <section id="contact" class="contact">
+      <div class="wrap">
+        <div class="sec-head" data-reveal>
+          <span class="sec-num">08</span>
+          <h2 class="sec-title">Get in touch</h2>
+        </div>
+
+        <p class="contact-statement" data-reveal>Open to engineering roles, collaborations, and technical conversations in computer vision &amp; edge AI.</p>
+
+        <a class="email-big" href="mailto:asimsaikhu@gmail.com" data-reveal>
+          <span>asimsaikhu@gmail.com</span> <span class="mono-arrow">→</span>
+        </a>
+
+        <div class="socials" data-reveal>
+          <a class="social-pill surf" href="https://linkedin.com/in/usmanasimsaikhu" target="_blank" rel="noopener">
+            <span class="social-label">LinkedIn</span>
+            <span class="social-handle">usmanasimsaikhu</span>
+          </a>
+          <a class="social-pill surf" href="https://github.com/saikhu" target="_blank" rel="noopener">
+            <span class="social-label">GitHub</span>
+            <span class="social-handle">saikhu</span>
+          </a>
+          <a class="social-pill surf" href="https://gitlab.com/saikhu" target="_blank" rel="noopener">
+            <span class="social-label">GitLab</span>
+            <span class="social-handle">saikhu</span>
+          </a>
+          <a class="social-pill surf" href="https://orcid.org/0000-0002-8884-7585" target="_blank" rel="noopener">
+            <span class="social-label">ORCID</span>
+            <span class="social-handle">0000-0002-8884-7585</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================== FOOTER ============================== -->
+  <footer class="footer surf">
+    <div class="footer-inner">
+      <span class="footer-left">Usman Asim Saikhu · Seoul, KR</span>
+      <span class="footer-center">© 2026 · Built with intent · References on request</span>
+      <a class="footer-top" href="#about">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

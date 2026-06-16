@@ -2,32 +2,26 @@
 layout: about
 title: about
 permalink: /
-# the subtitle under the name 
-# subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc. 
-
 
 profile:
   align: right
   image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
+  image_circular: false
   more_info: >
-    <p>Guro-dong, Seoul</p>
-    <p>Republic of Korea</p>
+    <p>Seoul, Republic of Korea</p>
     <p>asimsaikhu@gmail.com</p>
+    <p><a href="https://linkedin.com/in/usmanasimsaikhu">linkedin.com/in/usmanasimsaikhu</a></p>
 
-news: true  # includes a list of news items
-latest_posts: false  # includes a list of the newest posts
-selected_papers: false # includes a list of papers marked as "selected={true}"
-social: true  # includes social icons at the bottom of the page
+news: true
+latest_posts: false
+selected_papers: false
+social: true
 ---
-Greetings,
 
-Welcome to my personal webpage. I hail from [`Punjab, Pakistan`](https://en.wikipedia.org/wiki/Punjab,_Pakistan), a region renowned for its rich history and cultural heritage. My academic journey commenced at `COMSATS University, Islamabad`, where I earned my Bachelor's degree from the Department of Computer Science and Engineering.
+Computer vision and edge AI engineer focused on deploying deep learning models where hardware, latency, and reliability matter. I have 4+ years of experience across driver monitoring, occupant monitoring, road perception, surveillance, and medical imaging systems, with production work on TI TDA4VM, Hailo-15, Renesas R-Car, Rockchip, Mobilint Aries, and DeepX M1 targets.
 
-Subsequent to my undergraduate studies in Computer Science, I was honored to receive the Young Student Scholars Scholarship for postgraduate studies at `Chung-Ang University, Seoul, Korea`. My scholarly pursuits led me to complete my Master's degree from the Department of Computer Science and Engineering at Chung-Ang University.
+At DELTAX, I led seven engineers across model optimization, deployment, and integration for automotive AI programs with Hyundai, Kia, and LG Display. My work covered embedded C/C++, OpenVX vision applications, Yocto-based SDK customization, Docker-based CI/CD for model deployment, and optimized inference pipelines that improved FPS by up to 10x over Python laptop baselines.
 
-<!-- Currently I am working at [`Deltax.ai`](deltax.ai) as a Embedded AI solution deployment engineer. -->
+My research background is in image segmentation and medical imaging. I completed an M.S. in Computer Science and Engineering at Chung-Ang University, published six papers across IEEE Access, Springer, and international conferences, and built medical imaging systems including a cloud-native 3D CNN application for Alzheimer's disease classification from 3D brain MRI.
 
-For any further queries or academic collaborations, please feel free to contact me.     
-
-Thank you ~
+I am strongest in roles that combine computer vision, edge AI deployment, MLOps, embedded Linux, and customer-facing engineering. Current resume and detailed experience are available on the [CV page](/cv/).

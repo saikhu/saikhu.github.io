@@ -35,6 +35,27 @@
     });
   }
 
+  /* --------------------------- Scroll progress bar ------------------------- */
+  var progress = document.querySelector('.scroll-progress');
+  if (progress) {
+    var progressTicking = false;
+    var updateProgress = function () {
+      var doc = root;
+      var scrollable = (doc.scrollHeight - doc.clientHeight) || 1;
+      var ratio = Math.min(1, Math.max(0, window.scrollY / scrollable));
+      progress.style.transform = 'scaleX(' + ratio + ')';
+      progressTicking = false;
+    };
+    window.addEventListener('scroll', function () {
+      if (!progressTicking) {
+        window.requestAnimationFrame(updateProgress);
+        progressTicking = true;
+      }
+    }, { passive: true });
+    window.addEventListener('resize', updateProgress);
+    updateProgress();
+  }
+
   /* ----------------------------- Scroll reveal ---------------------------- */
   var reveals = Array.prototype.slice.call(document.querySelectorAll('[data-reveal]'));
 
@@ -112,7 +133,6 @@
 
   // Map each watched section id to the nav link that should light up.
   var spyMap = {
-    work: 'work',
     experience: 'experience',
     publications: 'publications'
   };

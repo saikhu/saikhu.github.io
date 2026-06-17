@@ -17,6 +17,51 @@
   <meta property="og:image" content="https://saikhu.github.io/assets/prof_square.jpg" />
   <meta name="twitter:card" content="summary" />
 
+  <!-- Structured data: machine-readable profile for search & AI screening -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Usman Asim Saikhu",
+    "alternateName": "Usman Asim",
+    "jobTitle": "Computer Vision Engineer — Edge AI, NPU Deployment & MLOps",
+    "url": "https://saikhu.github.io/",
+    "image": "https://saikhu.github.io/assets/prof_square.jpg",
+    "email": "mailto:asimsaikhu@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Seoul",
+      "addressCountry": "KR"
+    },
+    "alumniOf": [
+      { "@type": "CollegeOrUniversity", "name": "Chung-Ang University" },
+      { "@type": "CollegeOrUniversity", "name": "COMSATS University Islamabad" }
+    ],
+    "knowsAbout": [
+      "Computer Vision",
+      "Edge AI",
+      "NPU Deployment",
+      "Model Optimization",
+      "MLOps",
+      "Deep Learning",
+      "Driver Monitoring Systems",
+      "Embedded Linux",
+      "Medical Imaging",
+      "PyTorch",
+      "TensorFlow",
+      "ONNX",
+      "Docker",
+      "Sensor Fusion"
+    ],
+    "sameAs": [
+      "https://linkedin.com/in/usmanasimsaikhu",
+      "https://github.com/saikhu",
+      "https://gitlab.com/saikhu",
+      "https://orcid.org/0000-0002-8884-7585"
+    ]
+  }
+  </script>
+
   <!-- Favicon: peacock emoji -->
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦚</text></svg>" />
 
@@ -41,6 +86,9 @@
 </head>
 
 <body>
+  <!-- Scroll progress indicator -->
+  <div class="scroll-progress" aria-hidden="true"></div>
+
   <!-- ============================== NAV ============================== -->
   <header class="nav surf">
     <div class="nav-inner wrap">
@@ -49,9 +97,9 @@
         <span class="brand-tag">CV · EDGE AI</span>
       </a>
       <nav class="nav-right">
-        <a class="nav-link" href="#work" data-nav="work">Work</a>
         <a class="nav-link" href="#experience" data-nav="experience">Experience</a>
         <a class="nav-link" href="#publications" data-nav="publications">Publications</a>
+        <a class="nav-link nav-resume" href="assets/Usman_Asim_Saikhu_Resume.pdf" download>Résumé&nbsp;↓</a>
         <button class="theme-toggle surf" type="button" aria-label="Toggle dark mode">
           <span class="theme-glyph">☾</span>
         </button>
@@ -88,6 +136,9 @@
               <a class="btn btn-primary" href="mailto:asimsaikhu@gmail.com">
                 Get in touch <span class="mono-arrow">→</span>
               </a>
+              <a class="btn btn-secondary surf" href="assets/Usman_Asim_Saikhu_Resume.pdf" download aria-label="Download résumé (PDF)">
+                Résumé <span class="mono-arrow">↓</span>
+              </a>
               <a class="btn btn-secondary surf" href="https://linkedin.com/in/usmanasimsaikhu" target="_blank" rel="noopener">LinkedIn</a>
               <a class="btn btn-secondary surf" href="https://github.com/saikhu" target="_blank" rel="noopener">GitHub</a>
             </div>
@@ -96,7 +147,7 @@
           <div class="hero-photo" data-reveal>
             <div class="photo-wrap">
               <span class="photo-frame" aria-hidden="true"></span>
-              <img class="photo surf" src="assets/prof_square.jpg" alt="Usman Asim Saikhu" width="210" height="210" />
+              <img class="photo surf" src="assets/prof_pic.jpg" alt="Usman Asim Saikhu" width="240" height="317" />
             </div>
           </div>
         </div>
@@ -131,6 +182,15 @@
           <h2 class="sec-title">What I do</h2>
         </div>
 
+        <p class="sec-intro" data-reveal>
+          I build, optimize, and ship deep-learning vision systems on embedded NPUs and in the
+          cloud — across driver &amp; occupant monitoring, road perception, industrial safety, and
+          medical imaging. On TI TDA4VM, Hailo-15, Renesas R-Car, Rockchip, Mobilint Aries, and
+          DeepX&nbsp;M1 targets, I've led a seven-engineer team, built Docker-based MLOps pipelines,
+          and delivered up to <strong>10× faster inference</strong> than Python laptop baselines.
+          Published researcher with six peer-reviewed papers.
+        </p>
+
         <div class="focus-grid" data-reveal>
           <article class="focus-card surf">
             <span class="card-tag">EDGE DEPLOYMENT</span>
@@ -156,139 +216,11 @@
       </div>
     </section>
 
-    <!-- ============================== 02 SELECTED WORK ============================== -->
-    <section id="work">
-      <div class="wrap">
-        <div class="sec-head" data-reveal>
-          <span class="sec-num">02</span>
-          <h2 class="sec-title">Selected work</h2>
-        </div>
-
-        <div class="work">
-          <div class="proj-row" data-reveal>
-            <div class="proj">
-              <div class="proj-num">01</div>
-              <div class="proj-main">
-                <div class="proj-meta">Automotive · DELTAX</div>
-                <h3 class="proj-title">Cabin &amp; driver monitoring systems</h3>
-                <p class="proj-body">Driver and occupant monitoring with face detection, facial landmarks, gaze tracking, and drowsiness detection — built to run reliably on embedded IR camera systems under real-time, low-power constraints. Delivered into Korean OEM and supplier programs.</p>
-                <div class="proj-tags">
-                  <span class="tag surf">Driver Monitoring</span>
-                  <span class="tag surf">Embedded</span>
-                  <span class="tag surf">IR Vision</span>
-                  <span class="tag surf">Euro NCAP</span>
-                </div>
-              </div>
-              <div class="proj-action">
-                <span class="proj-conf">● Confidential</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="proj-row" data-reveal>
-            <div class="proj">
-              <div class="proj-num">02</div>
-              <div class="proj-main">
-                <div class="proj-meta">Automotive · DELTAX (Kia EV9)</div>
-                <h3 class="proj-title">Surround-view &amp; road perception</h3>
-                <p class="proj-body">A four-camera surround-view and road-segmentation system for the Kia EV9 — detecting potholes, curbs, tunnel-height limits, and speed bumps — developed and deployed on the TI TDA4VM SoM EVM as a client proof of concept.</p>
-                <div class="proj-tags">
-                  <span class="tag surf">Surround View</span>
-                  <span class="tag surf">Road Segmentation</span>
-                  <span class="tag surf">TDA4VM</span>
-                  <span class="tag surf">Sensor Fusion</span>
-                </div>
-              </div>
-              <div class="proj-action">
-                <span class="proj-conf">● Confidential</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="proj-row" data-reveal>
-            <div class="proj">
-              <div class="proj-num">03</div>
-              <div class="proj-main">
-                <div class="proj-meta">Industrial · ConTiLab</div>
-                <h3 class="proj-title">iSafeGuard worker-safety on NPUs</h3>
-                <p class="proj-body">YOLOv8 worker-safety detection deployed and benchmarked across Mobilint Aries and DeepX M1 NPUs, plus a remote model-management and monitoring system for camera-based safety devices running on embedded AI hardware.</p>
-                <div class="proj-tags">
-                  <span class="tag surf">YOLOv8</span>
-                  <span class="tag surf">Mobilint Aries</span>
-                  <span class="tag surf">DeepX M1</span>
-                  <span class="tag surf">Edge MLOps</span>
-                </div>
-              </div>
-              <div class="proj-action"></div>
-            </div>
-          </div>
-
-          <div class="proj-row" data-reveal>
-            <div class="proj">
-              <div class="proj-num">04</div>
-              <div class="proj-main">
-                <div class="proj-meta">Medical Imaging · UNOMIC</div>
-                <h3 class="proj-title">Cloud-native Alzheimer's detection</h3>
-                <p class="proj-body">A cloud-native 3D brain-MRI classifier: format conversion, hippocampus segmentation, and a 3D-CNN in a containerized inference workflow. Supported a Korea MFDS medical-device registration submission under PIPA requirements.</p>
-                <div class="proj-tags">
-                  <span class="tag surf">3D CNN</span>
-                  <span class="tag surf">Brain MRI</span>
-                  <span class="tag surf">Containerized</span>
-                  <span class="tag surf">MFDS</span>
-                </div>
-              </div>
-              <div class="proj-action"></div>
-            </div>
-          </div>
-
-          <div class="proj-row" data-reveal>
-            <div class="proj">
-              <div class="proj-num">05</div>
-              <div class="proj-main">
-                <div class="proj-meta">Research · IEEE Access</div>
-                <h3 class="proj-title">Active contour segmentation (ACLD)</h3>
-                <p class="proj-body">An Active Contour Model with a Local Dilated Convolution Filter for segmenting inhomogeneous images where boundaries resist standard region-based methods. First-author paper published in IEEE Access.</p>
-                <div class="proj-tags">
-                  <span class="tag surf">Segmentation</span>
-                  <span class="tag surf">Level-Set</span>
-                  <span class="tag surf">Dilated Conv</span>
-                </div>
-              </div>
-              <div class="proj-action">
-                <a class="proj-arrow" href="https://doi.org/10.1109/ACCESS.2021.3137052" target="_blank" rel="noopener"><span>IEEE</span> ↗</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="proj-row" data-reveal>
-            <div class="proj">
-              <div class="proj-num">06</div>
-              <div class="proj-main">
-                <div class="proj-meta">Engineering · Open Source</div>
-                <h3 class="proj-title">Docker guide for AI deployment</h3>
-                <p class="proj-body">A practical Docker guide for CV/AI workflows — container concepts plus packaging Python/OpenCV inference (incl. a live Flask face-detection demo) for reproducible local and server-side execution.</p>
-                <div class="proj-tags">
-                  <span class="tag surf">Docker</span>
-                  <span class="tag surf">OpenCV</span>
-                  <span class="tag surf">MLOps</span>
-                </div>
-              </div>
-              <div class="proj-action">
-                <a class="proj-arrow" href="https://github.com/saikhu/Docker-Guide-for-AI-Model-Development-and-Deployment" target="_blank" rel="noopener"><span>GitHub</span> ↗</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="proj-close"></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============================== 03 EXPERIENCE ============================== -->
+    <!-- ============================== 02 EXPERIENCE ============================== -->
     <section id="experience">
       <div class="wrap">
         <div class="sec-head" data-reveal>
-          <span class="sec-num">03</span>
+          <span class="sec-num">02</span>
           <h2 class="sec-title">Experience</h2>
         </div>
 
@@ -301,7 +233,11 @@
             <div class="exp-main">
               <h3 class="exp-role">AI Consultant <span class="exp-pt">part-time</span></h3>
               <div class="exp-org">Evismart · AI Product Consulting</div>
-              <p class="exp-body">Advised on a dental-scan segmentation product end to end — computer-vision model design, optimization, and deployment strategy — translating clinical imaging requirements into practical model-development and production-readiness guidance for the product team.</p>
+              <p class="exp-body">Advised an in-house AI product team on a dental-scan segmentation product, end to end.</p>
+              <ul class="exp-bullets">
+                <li>Guided computer-vision model design, optimization, and deployment strategy for dental-scan segmentation.</li>
+                <li>Translated clinical imaging requirements into practical model-development and production-readiness guidance.</li>
+              </ul>
             </div>
           </div>
 
@@ -313,7 +249,11 @@
             <div class="exp-main">
               <h3 class="exp-role">AI Research Engineer</h3>
               <div class="exp-org">ConTiLab · Industrial Safety AI</div>
-              <p class="exp-body">Deployed iSafeGuard YOLOv8 worker-safety models on <strong>Mobilint Aries</strong> and <strong>DeepX M1</strong> NPUs and benchmarked performance across embedded targets. Built a remote AI model-management and monitoring system for camera-based safety devices running on embedded NPUs.</p>
+              <p class="exp-body">Brought the iSafeGuard industrial-safety platform onto embedded AI hardware.</p>
+              <ul class="exp-bullets">
+                <li>Deployed iSafeGuard <strong>YOLOv8</strong> worker-safety models on <strong>Mobilint Aries</strong> and <strong>DeepX M1</strong> NPUs and benchmarked performance across embedded targets.</li>
+                <li>Built a remote AI model-management and monitoring system for camera-based safety devices running on embedded NPUs.</li>
+              </ul>
             </div>
           </div>
 
@@ -325,7 +265,12 @@
             <div class="exp-main">
               <h3 class="exp-role">Team Lead · Computer Vision &amp; Edge-AI Engineer</h3>
               <div class="exp-org">DELTAX · Automotive AI</div>
-              <p class="exp-body">Led <strong>seven engineers</strong> across model optimization, deployment, and integration for automotive AI programs delivered to <strong>Hyundai, Kia, and LG Display</strong>. Built embedded C/C++ and OpenVX vision applications, customized Yocto-based SDKs, integrated in-vehicle sensor-fusion inputs, and automated Docker-based CI/CD — delivering inference pipelines up to <strong>10× faster</strong> than Python laptop baselines. Shipped models spanning driver &amp; occupant monitoring, surround-view road perception, road-crack detection, in-cabin gesture UI, and factory surveillance.</p>
+              <p class="exp-body">Led <strong>seven engineers</strong> across model optimization, deployment, and integration for automotive AI programs delivered to <strong>Hyundai, Kia, and LG Display</strong>.</p>
+              <ul class="exp-bullets">
+                <li>Delivered multi-model inference pipelines up to <strong>10× faster</strong> than Python laptop baselines across TI TDA4VM, Hailo-15, Renesas R-Car, and Rockchip.</li>
+                <li>Customized Yocto-based Linux SDKs and built OpenVX / embedded C/C++ apps for fisheye IR driver &amp; occupant monitoring cameras, integrating in-vehicle sensor-fusion inputs.</li>
+                <li>Automated Docker-based CI/CD for releases; shipped models spanning driver &amp; occupant monitoring, surround-view road perception, road-crack detection, in-cabin gesture UI, and factory surveillance.</li>
+              </ul>
               <div class="targets surf">
                 <div class="targets-label">DEPLOYMENT TARGETS</div>
                 <div class="chips">
@@ -348,7 +293,11 @@
             <div class="exp-main">
               <h3 class="exp-role">AI Research Engineer</h3>
               <div class="exp-org">UNOMIC Inc. · Medical AI</div>
-              <p class="exp-body">Developed and deployed a cloud-native, containerized 3D-CNN application for Alzheimer's-disease classification from 3D brain MRI, and supported a Korea MFDS medical-device registration submission under Personal Information Protection Act (PIPA) requirements.</p>
+              <p class="exp-body">Took a medical-imaging classifier from research to a regulated, cloud-native deployment.</p>
+              <ul class="exp-bullets">
+                <li>Developed and deployed a cloud-native, containerized <strong>3D-CNN</strong> for Alzheimer's-disease classification from 3D brain MRI.</li>
+                <li>Supported a Korea <strong>MFDS</strong> medical-device registration submission under Personal Information Protection Act (PIPA) requirements.</li>
+              </ul>
             </div>
           </div>
 
@@ -381,11 +330,11 @@
       </div>
     </section>
 
-    <!-- ============================== 04 EDUCATION ============================== -->
+    <!-- ============================== 03 EDUCATION ============================== -->
     <section id="education">
       <div class="wrap">
         <div class="sec-head" data-reveal>
-          <span class="sec-num">04</span>
+          <span class="sec-num">03</span>
           <h2 class="sec-title">Education</h2>
         </div>
 
@@ -419,11 +368,11 @@
       </div>
     </section>
 
-    <!-- ============================== 05 TOOLKIT ============================== -->
+    <!-- ============================== 04 TOOLKIT ============================== -->
     <section id="toolkit">
       <div class="wrap">
         <div class="sec-head" data-reveal>
-          <span class="sec-num">05</span>
+          <span class="sec-num">04</span>
           <h2 class="sec-title">Toolkit</h2>
         </div>
 
@@ -493,14 +442,21 @@
             </div>
           </div>
         </div>
+
+        <div class="tk-os" data-reveal>
+          <span class="tk-os-label">Open source</span>
+          <a class="tk-os-link" href="https://github.com/saikhu/Docker-Guide-for-AI-Model-Development-and-Deployment" target="_blank" rel="noopener">
+            Docker Guide for AI Model Development &amp; Deployment <span class="mono-arrow">↗</span>
+          </a>
+        </div>
       </div>
     </section>
 
-    <!-- ============================== 06 PUBLICATIONS ============================== -->
+    <!-- ============================== 05 PUBLICATIONS ============================== -->
     <section id="publications">
       <div class="wrap">
         <div class="sec-head" data-reveal>
-          <span class="sec-num">06</span>
+          <span class="sec-num">05</span>
           <h2 class="sec-title">Publications</h2>
         </div>
 
@@ -580,11 +536,11 @@
       </div>
     </section>
 
-    <!-- ============================== 07 RECOGNITION ============================== -->
+    <!-- ============================== 06 RECOGNITION ============================== -->
     <section id="recognition">
       <div class="wrap">
         <div class="sec-head" data-reveal>
-          <span class="sec-num">07</span>
+          <span class="sec-num">06</span>
           <h2 class="sec-title">Certifications, awards &amp; languages</h2>
         </div>
 
@@ -644,36 +600,48 @@
       </div>
     </section>
 
-    <!-- ============================== 08 GET IN TOUCH ============================== -->
+    <!-- ============================== 07 GET IN TOUCH ============================== -->
     <section id="contact" class="contact">
       <div class="wrap">
         <div class="sec-head" data-reveal>
-          <span class="sec-num">08</span>
+          <span class="sec-num">07</span>
           <h2 class="sec-title">Get in touch</h2>
         </div>
 
         <p class="contact-statement" data-reveal>Open to engineering roles, collaborations, and technical conversations in computer vision &amp; edge AI.</p>
 
-        <a class="email-big" href="mailto:asimsaikhu@gmail.com" data-reveal>
-          <span>asimsaikhu@gmail.com</span> <span class="mono-arrow">→</span>
-        </a>
+        <div class="contact-actions" data-reveal>
+          <a class="email-big" href="mailto:asimsaikhu@gmail.com">
+            <span>asimsaikhu@gmail.com</span> <span class="mono-arrow">→</span>
+          </a>
+
+          <a class="resume-cta surf" href="assets/Usman_Asim_Saikhu_Resume.pdf" download aria-label="Download résumé (PDF)">
+            <span class="resume-cta-label">Download résumé</span>
+            <span class="resume-cta-meta">PDF · 2 pages</span>
+            <span class="mono-arrow">↓</span>
+          </a>
+        </div>
 
         <div class="socials" data-reveal>
-          <a class="social-pill surf" href="https://linkedin.com/in/usmanasimsaikhu" target="_blank" rel="noopener">
-            <span class="social-label">LinkedIn</span>
-            <span class="social-handle">usmanasimsaikhu</span>
+          <a class="social-link" href="https://linkedin.com/in/usmanasimsaikhu" target="_blank" rel="noopener">
+            <span class="social-name">LinkedIn</span>
+            <span class="social-handle">/usmanasimsaikhu</span>
+            <span class="social-arrow">↗</span>
           </a>
-          <a class="social-pill surf" href="https://github.com/saikhu" target="_blank" rel="noopener">
-            <span class="social-label">GitHub</span>
-            <span class="social-handle">saikhu</span>
+          <a class="social-link" href="https://github.com/saikhu" target="_blank" rel="noopener">
+            <span class="social-name">GitHub</span>
+            <span class="social-handle">/saikhu</span>
+            <span class="social-arrow">↗</span>
           </a>
-          <a class="social-pill surf" href="https://gitlab.com/saikhu" target="_blank" rel="noopener">
-            <span class="social-label">GitLab</span>
-            <span class="social-handle">saikhu</span>
+          <a class="social-link" href="https://gitlab.com/saikhu" target="_blank" rel="noopener">
+            <span class="social-name">GitLab</span>
+            <span class="social-handle">/saikhu</span>
+            <span class="social-arrow">↗</span>
           </a>
-          <a class="social-pill surf" href="https://orcid.org/0000-0002-8884-7585" target="_blank" rel="noopener">
-            <span class="social-label">ORCID</span>
+          <a class="social-link" href="https://orcid.org/0000-0002-8884-7585" target="_blank" rel="noopener">
+            <span class="social-name">ORCID</span>
             <span class="social-handle">0000-0002-8884-7585</span>
+            <span class="social-arrow">↗</span>
           </a>
         </div>
       </div>

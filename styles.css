@@ -27,7 +27,7 @@
 
   --maxw: 1080px;
   --pad-inline: clamp(20px, 5vw, 40px);
-  --sec-pad: clamp(52px, 8vw, 88px);
+  --sec-pad: clamp(38px, 5.5vw, 60px);
 }
 
 .theme-dark {
@@ -258,8 +258,8 @@ main > section {
 
 /* =============================== HERO =============================== */
 .hero {
-  padding-top: clamp(120px, 17vh, 180px);
-  padding-bottom: clamp(52px, 7vw, 80px);
+  padding-top: clamp(100px, 13vh, 140px);
+  padding-bottom: clamp(32px, 4.5vw, 52px);
 }
 
 .hero-grid {
@@ -418,7 +418,7 @@ main > section {
 
 /* Stats */
 .stats {
-  margin-top: clamp(52px, 8vw, 84px);
+  margin-top: clamp(32px, 5vw, 56px);
   border-top: 1px solid var(--line);
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -473,7 +473,7 @@ main > section {
   display: flex;
   align-items: baseline;
   gap: 12px;
-  margin-bottom: clamp(30px, 4vw, 46px);
+  margin-bottom: clamp(20px, 2.6vw, 32px);
 }
 .sec-num {
   font-family: var(--font-mono);
@@ -494,7 +494,7 @@ main > section {
   color: var(--ink2);
   max-width: 54em;
   text-wrap: pretty;
-  margin: -14px 0 clamp(28px, 4vw, 42px);
+  margin: -10px 0 clamp(20px, 3vw, 30px);
 }
 .sec-intro strong {
   color: var(--ink);
@@ -515,7 +515,7 @@ main > section {
   flex: 1 1 280px;
   min-width: 240px;
   background: var(--surface);
-  padding: clamp(26px, 3vw, 34px);
+  padding: clamp(22px, 2.6vw, 30px);
   transition: background 0.3s;
 }
 .focus-card:hover {
@@ -547,7 +547,7 @@ main > section {
   gap: clamp(20px, 4vw, 44px);
   flex-wrap: wrap;
   border-top: 1px solid var(--line);
-  padding: clamp(30px, 3.6vw, 40px) 0;
+  padding: clamp(22px, 2.6vw, 30px) 0;
 }
 .exp-close {
   border-top: 1px solid var(--line);
@@ -673,7 +673,7 @@ main > section {
 .tk-col {
   flex: 1 1 210px;
   min-width: 180px;
-  padding: clamp(24px, 3vw, 30px) 28px clamp(24px, 3vw, 30px) 0;
+  padding: clamp(18px, 2.2vw, 24px) 28px clamp(18px, 2.2vw, 24px) 0;
 }
 .tk-label {
   display: flex;
@@ -748,7 +748,7 @@ main > section {
 .pub-group {
   display: flex;
   gap: clamp(20px, 4vw, 44px);
-  padding: clamp(26px, 3vw, 34px) 0;
+  padding: clamp(20px, 2.4vw, 28px) 0;
   border-top: 1px solid var(--line);
   flex-wrap: wrap;
 }
@@ -768,7 +768,7 @@ main > section {
   min-width: 280px;
   display: flex;
   flex-direction: column;
-  gap: 28px;
+  gap: 22px;
 }
 .pub-badges {
   display: flex;
@@ -832,7 +832,7 @@ main > section {
 .rec-col {
   flex: 1 1 280px;
   min-width: 240px;
-  padding: clamp(24px, 3vw, 30px) 28px clamp(10px, 1.5vw, 14px) 0;
+  padding: clamp(18px, 2.2vw, 24px) 28px clamp(8px, 1.2vw, 12px) 0;
 }
 .rec-label {
   display: flex;
@@ -867,8 +867,8 @@ main > section {
 
 /* =============================== 08 CONTACT =============================== */
 .contact {
-  padding-top: clamp(60px, 9vw, 118px) !important;
-  padding-bottom: clamp(48px, 6vw, 72px) !important;
+  padding-top: clamp(44px, 6vw, 76px) !important;
+  padding-bottom: clamp(36px, 4.5vw, 56px) !important;
 }
 .contact-statement {
   font-size: clamp(1.6rem, 4.4vw, 3rem);

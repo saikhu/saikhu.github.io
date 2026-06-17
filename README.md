@@ -1,21 +1,22 @@
 # saikhu.github.io
 
 Personal portfolio for **Usman Asim Saikhu** — a computer-vision & edge-AI engineer in Seoul.
-A single static page: hero/about, focus areas, selected work, experience & education,
-toolkit, publications, and contact. Light/dark mode with subtle scroll-reveal and hover
-micro-interactions.
+A single static page: hero/about, focus areas, experience, education, toolkit,
+publications, and contact. Light/dark mode with subtle scroll-reveal, a scroll-progress
+bar, and hover micro-interactions.
 
 ## Stack
 
 Plain **HTML + CSS + vanilla JS** — no framework, no build step.
 
 ```text
-index.html     # all markup, one page
+index.html     # all markup, one page (incl. JSON-LD Person structured data)
 styles.css     # design tokens (light/dark) + component styles
-main.js        # theme toggle (persisted), scrollspy, scroll-reveal
+main.js        # theme toggle (persisted), scrollspy, scroll-reveal, scroll-progress bar
 assets/
-  prof_square.jpg   # 600×600 headshot used in the hero
-  prof_pic.jpg      # original full headshot (source for the crop)
+  prof_square.jpg              # 600×600 headshot used in the hero
+  prof_pic.jpg                 # original full headshot (source for the crop)
+  Usman_Asim_Saikhu_Resume.pdf # downloadable résumé (hero / nav / contact links)
 .nojekyll      # tells GitHub Pages to serve the files as-is (no Jekyll build)
 ```
 

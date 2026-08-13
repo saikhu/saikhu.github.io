@@ -134,6 +134,7 @@
   // Map each watched section id to the nav link that should light up.
   var spyMap = {
     experience: 'experience',
+    projects: 'projects',
     publications: 'publications'
   };
   var watched = Object.keys(spyMap)

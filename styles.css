@@ -664,7 +664,141 @@ main > section {
   color: var(--ink2);
 }
 
-/* =============================== 04 TOOLKIT =============================== */
+/* =============================== 03 PROJECTS =============================== */
+.proj-feature {
+  display: grid;
+  grid-template-columns: minmax(260px, 42%) 1fr;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  overflow: hidden;
+  background: var(--surface);
+  margin-bottom: clamp(16px, 2.2vw, 22px);
+}
+.proj-media {
+  position: relative;
+  overflow: hidden;
+  background: var(--line2);
+}
+.proj-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* Featured media fills the card's height next to the text column */
+.proj-media-fill img {
+  position: absolute;
+  inset: 0;
+}
+/* Diagram-style figures: show the whole image on a white plate */
+.proj-media-fit {
+  background: #fff;
+}
+.proj-media-fit img {
+  object-fit: contain;
+  padding: 14px;
+}
+/* Screenshots where the top edge carries the meaning */
+.proj-media-top img {
+  object-position: center top;
+}
+.proj-body {
+  padding: clamp(20px, 2.6vw, 28px);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+.proj-meta {
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+.proj-date {
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  color: var(--muted);
+}
+.proj-title {
+  font-size: 1.22rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+  text-wrap: pretty;
+}
+.proj-desc {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--muted);
+  text-wrap: pretty;
+}
+.proj-body .chips {
+  margin-top: 4px;
+}
+.proj-body .chip {
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 6px 12px;
+  color: var(--ink2);
+}
+.proj-link {
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  color: var(--ink);
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 2px;
+  margin-top: 2px;
+  transition: border-color 0.25s, color 0.25s;
+}
+.proj-link:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+.proj-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: clamp(14px, 2vw, 20px);
+}
+.proj-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  overflow: hidden;
+  background: var(--surface);
+  transition: border-color 0.3s, transform 0.3s, box-shadow 0.3s,
+              background 0.5s, color 0.5s;
+}
+.proj-card:hover {
+  border-color: var(--faint);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow);
+}
+.proj-card .proj-media {
+  aspect-ratio: 16 / 10;
+  border-bottom: 1px solid var(--line2);
+}
+.proj-card .proj-body {
+  flex: 1;
+}
+@media (max-width: 760px) {
+  .proj-feature {
+    grid-template-columns: 1fr;
+  }
+  .proj-feature .proj-media {
+    aspect-ratio: 16 / 10;
+  }
+  .proj-media-fill img {
+    position: static;
+  }
+  .proj-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =============================== 05 TOOLKIT =============================== */
 .toolkit {
   display: flex;
   flex-wrap: wrap;
@@ -744,7 +878,7 @@ main > section {
   color: var(--accent);
 }
 
-/* =============================== 05 PUBLICATIONS =============================== */
+/* =============================== 06 PUBLICATIONS =============================== */
 .pub-group {
   display: flex;
   gap: clamp(20px, 4vw, 44px);

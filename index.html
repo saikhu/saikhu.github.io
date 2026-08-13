@@ -97,6 +97,7 @@
       </a>
       <nav class="nav-right">
         <a class="nav-link" href="#experience" data-nav="experience">Experience</a>
+        <a class="nav-link" href="#projects" data-nav="projects">Projects</a>
         <a class="nav-link" href="#publications" data-nav="publications">Publications</a>
         <a class="nav-link nav-resume" href="assets/Usman_Asim_Saikhu_Resume.pdf" download>Résumé&nbsp;↓</a>
         <button class="theme-toggle surf" type="button" aria-label="Toggle dark mode">
@@ -329,11 +330,102 @@
       </div>
     </section>
 
-    <!-- ============================== 03 EDUCATION ============================== -->
-    <section id="education">
+    <!-- ============================== 03 PROJECTS ============================== -->
+    <section id="projects">
       <div class="wrap">
         <div class="sec-head" data-reveal>
           <span class="sec-num">03</span>
+          <h2 class="sec-title">Selected projects</h2>
+        </div>
+
+        <!-- Featured: cabin & driver monitoring -->
+        <article class="proj-feature surf" data-reveal>
+          <div class="proj-media proj-media-fill">
+            <img src="assets/projects/driver-monitoring.jpg" alt="In-cabin driver monitoring concept: dashboard displays showing gaze tracking, drowsiness, and attention cues" loading="lazy" width="1024" height="1024" />
+          </div>
+          <div class="proj-body">
+            <div class="proj-meta">
+              <span class="card-tag">AUTOMOTIVE · HYUNDAI / KIA</span>
+              <span class="proj-date">2022 — 2025</span>
+            </div>
+            <h3 class="proj-title">Cabin &amp; driver monitoring systems</h3>
+            <p class="proj-desc">Driver and occupant monitoring for automotive programs — face detection, facial landmarks, gaze tracking, and drowsiness detection on fisheye IR cameras, deployed as embedded C/C++ pipelines on automotive NPUs under real-time and Euro NCAP-oriented constraints. Client work; visuals are representative.</p>
+            <div class="chips">
+              <span class="chip">TI TDA4VM</span>
+              <span class="chip">Renesas R-Car</span>
+              <span class="chip">OpenVX</span>
+              <span class="chip">Embedded C/C++</span>
+            </div>
+          </div>
+        </article>
+
+        <div class="proj-grid">
+          <article class="proj-card surf" data-reveal>
+            <div class="proj-media proj-media-fit">
+              <img src="assets/projects/alzheimers-pipeline.png" alt="Pipeline diagram: DICOM-to-NIfTI conversion, preprocessing, hippocampus segmentation, and CNN-based Alzheimer's classification" loading="lazy" width="1332" height="674" />
+            </div>
+            <div class="proj-body">
+              <div class="proj-meta">
+                <span class="card-tag">MEDICAL AI</span>
+                <span class="proj-date">2022</span>
+              </div>
+              <h3 class="proj-title">Cloud-native Alzheimer's detection</h3>
+              <p class="proj-desc">Containerized 3D-CNN application classifying Alzheimer's disease from 3D brain MRI — DICOM conversion, hippocampus segmentation, and cloud-side inference — supporting a Korea MFDS medical-device submission.</p>
+            </div>
+          </article>
+
+          <article class="proj-card surf" data-reveal>
+            <div class="proj-media">
+              <img src="assets/projects/active-contour.jpg" alt="Segmentation figure from the IEEE Access paper: active contour results outlined on aerial images" loading="lazy" width="1400" height="832" />
+            </div>
+            <div class="proj-body">
+              <div class="proj-meta">
+                <span class="card-tag">RESEARCH · IEEE ACCESS</span>
+                <span class="proj-date">2021</span>
+              </div>
+              <h3 class="proj-title">Active contour model with dilated convolution</h3>
+              <p class="proj-desc">First-author IEEE Access work combining active contour modeling with a local dilated convolution filter for robust segmentation of inhomogeneous synthetic, natural, and medical images.</p>
+              <a class="proj-link" href="https://doi.org/10.1109/ACCESS.2021.3137052" target="_blank" rel="noopener"><span>DOI</span> ↗</a>
+            </div>
+          </article>
+
+          <article class="proj-card surf" data-reveal>
+            <div class="proj-media">
+              <img src="assets/projects/docker-guide.jpg" alt="Illustration of the Docker whale over a laptop and shipping containers" loading="lazy" width="1024" height="1024" />
+            </div>
+            <div class="proj-body">
+              <div class="proj-meta">
+                <span class="card-tag">OPEN SOURCE</span>
+                <span class="proj-date">2023</span>
+              </div>
+              <h3 class="proj-title">Docker guide for AI development &amp; deployment</h3>
+              <p class="proj-desc">Practical open-source guide to packaging computer-vision workloads with Docker — container concepts, OpenCV inference examples served through Flask, and reproducible build-and-run workflows.</p>
+              <a class="proj-link" href="https://github.com/saikhu/Docker-Guide-for-AI-Model-Development-and-Deployment" target="_blank" rel="noopener"><span>GitHub</span> ↗</a>
+            </div>
+          </article>
+
+          <article class="proj-card surf" data-reveal>
+            <div class="proj-media proj-media-top">
+              <img src="assets/projects/matlab-toolkit.jpg" alt="MATLAB GUI of the medical-imaging classification toolkit showing dataset loading and preview" loading="lazy" width="1400" height="1204" />
+            </div>
+            <div class="proj-body">
+              <div class="proj-meta">
+                <span class="card-tag">MATLAB</span>
+                <span class="proj-date">2019</span>
+              </div>
+              <h3 class="proj-title">Medical-imaging classification toolkit</h3>
+              <p class="proj-desc">Final-year MATLAB toolkit for medical-imaging research: dataset loading, preprocessing, handcrafted (HOG, LBP) and deep (AlexNet, ResNet) feature extraction, and comparative classifier evaluation.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== 04 EDUCATION ============================== -->
+    <section id="education">
+      <div class="wrap">
+        <div class="sec-head" data-reveal>
+          <span class="sec-num">04</span>
           <h2 class="sec-title">Education</h2>
         </div>
 
@@ -367,11 +459,11 @@
       </div>
     </section>
 
-    <!-- ============================== 04 TOOLKIT ============================== -->
+    <!-- ============================== 05 TOOLKIT ============================== -->
     <section id="toolkit">
       <div class="wrap">
         <div class="sec-head" data-reveal>
-          <span class="sec-num">04</span>
+          <span class="sec-num">05</span>
           <h2 class="sec-title">Toolkit</h2>
         </div>
 
@@ -451,11 +543,11 @@
       </div>
     </section>
 
-    <!-- ============================== 05 PUBLICATIONS ============================== -->
+    <!-- ============================== 06 PUBLICATIONS ============================== -->
     <section id="publications">
       <div class="wrap">
         <div class="sec-head" data-reveal>
-          <span class="sec-num">05</span>
+          <span class="sec-num">06</span>
           <h2 class="sec-title">Publications</h2>
         </div>
 
@@ -535,11 +627,11 @@
       </div>
     </section>
 
-    <!-- ============================== 06 RECOGNITION ============================== -->
+    <!-- ============================== 07 RECOGNITION ============================== -->
     <section id="recognition">
       <div class="wrap">
         <div class="sec-head" data-reveal>
-          <span class="sec-num">06</span>
+          <span class="sec-num">07</span>
           <h2 class="sec-title">Certifications, awards &amp; languages</h2>
         </div>
 
@@ -599,11 +691,11 @@
       </div>
     </section>
 
-    <!-- ============================== 07 GET IN TOUCH ============================== -->
+    <!-- ============================== 08 GET IN TOUCH ============================== -->
     <section id="contact" class="contact">
       <div class="wrap">
         <div class="sec-head" data-reveal>
-          <span class="sec-num">07</span>
+          <span class="sec-num">08</span>
           <h2 class="sec-title">Get in touch</h2>
         </div>
 
